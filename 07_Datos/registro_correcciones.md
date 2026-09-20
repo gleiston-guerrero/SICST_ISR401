@@ -4,42 +4,46 @@
 **Repositorio de referencia al recibir el plan:** `gleiston-guerrero/SICST_ISR401`, HEAD `f16af8a`  
 **Regla:** no se reescribe historial. Cada corrección se incorpora mediante commit nuevo y se registra aquí.
 
-> IMPORTANTE: los campos `COMMIT: PENDIENTE` deben reemplazarse por el hash real después de subir cada grupo. No escribir hashes inventados.
+> IMPORTANTE: los campos `PENDIENTE` deben reemplazarse por el hash real únicamente cuando la tarea correspondiente se haya completado y verificado. No escribir hashes inventados.
 
 | Tarea | Cambio / estado | Evidencia o archivo | Commit |
 |---|---|---|---|
 | A1 | Pendiente de acción en OSF sobre el registro retrospectivo antiguo | OSF `82q76` | PENDIENTE |
 | A2 | Pendiente de evidencia primaria de los evaluadores antiguos o rotulado de procedencia no verificable | declaraciones / hojas originales | PENDIENTE |
-| A3 | Pendiente de revisar todos los calificativos de independencia del experimento antiguo | `06_Experimento/README.md`, publicación y OSF cuando aplique | PENDIENTE |
-| A4 | Preparación prospectiva creada en una estructura simple: rúbrica v1.0, tres hojas en blanco (`SICST_A4_Evaluador_01.xlsx`, `_02.xlsx`, `_03.xlsx`), `hoja_items_A4_v1.0.csv`, semilla 20260918, control de estilo 50 % y registro OSF `drt3c` | `06_Experimento/repeticion_A4/` | PENDIENTE |
-| A5 | Se ejecutará después de recibir 3 evaluaciones reales | script/CSV nuevo | PENDIENTE |
-| A6 | Ficha rotulada como reconstruida y contradicción de WALK corregida; exportación completa del chat original sigue pendiente | `06_Experimento/prompts_llm/prompt_generacion_RF_llm.md` | PENDIENTE |
-| A7 | Definición de consistencia unificada y mención de “clave privada” retirada; versión auténtica usada el 12/09 sigue pendiente | `06_Experimento/instrumentos/rubrica_evaluacion_requisitos.md` | PENDIENTE |
+| A3 | Se documentó la relación de los evaluadores originales con el corpus, se retiraron afirmaciones no sustentadas de independencia y se sustituyeron las referencias a “evaluación ciega” por una descripción factual del procedimiento: origen no indicado explícitamente en la hoja. | `06_Experimento/README.md`, `06_Experimento/registro_previo/README.md` | `0af95428`, `d1288d58`, `18b2d2db` |
+| A4 | Repetición realizada con 3 evaluadores nuevos (`EVAL-01`, `EVAL-02`, `EVAL-03`), 66 requisitos normalizados, orden fijado con semilla `20260918`, rúbrica A4 versionada, control de fuga de estilo y registro OSF `drt3c`. Las tres evaluaciones completadas se conservan como datos crudos. El registro OSF fue posteriormente verificado como `Accepted` antes de la primera sesión real. | `06_Experimento/repeticion_A4/` | `cd23f392`, `9144b885`, `38a9804d`, `2173d529`, `330e53c8`, `4843b624`, `3c4f3f40`, `4f864580`, `0fab44ed`, `728d9c34` |
+| A5 | Análisis de fiabilidad ejecutado sobre las tres evaluaciones A4: ICC(2,1), ICC(2,k), alfa ordinal con IC 95 %, κ de Fleiss y declaración de MDE `dz ≈ 0.94`. Los resultados se reportan como exploratorios y sin afirmaciones de equivalencia. | `06_Experimento/repeticion_A4/analisis/analisis_A5.py`, `06_Experimento/repeticion_A4/analisis/resultados_fiabilidad_A5.csv`, `06_Experimento/repeticion_A4/analisis/resultado_A5.md` | `1c10e1a4`, `b501e21a`, `8a3d1465` |
+| A6 | Se corrigió la ficha del brazo LLM: quedó rotulada como reconstrucción retrospectiva, se corrigió la contradicción 18/19 archivos, se reconoció la inclusión de archivos WALK y se corrigió el nombre de PAC-07. La exportación o capturas completas de la conversación original siguen pendientes de recuperación. | `06_Experimento/prompts_llm/prompt_generacion_RF_llm.md` | `c2db184e` |
+| A7 | Se unificó la definición de consistencia interna y se eliminaron las referencias a una “clave privada” inexistente. La versión auténtica utilizada el 12/09 continúa pendiente de recuperación, por lo que la versión actual está identificada como corrección retrospectiva. | `06_Experimento/instrumentos/rubrica_evaluacion_requisitos.md`, `06_Experimento/instrumentos/README.md` | `5c8a078e`, `da349dd4`, `7eeaa17f` |
 | B1 | Pendiente retranscripción desde audio de FAM-04 | audio original + transcripción | PENDIENTE |
-| B2 | Pendiente información real de elegibilidad/reclutamiento/vínculo de cada participante | `02_Evidencias/elegibilidad.csv` | PENDIENTE |
-| B3 | Pendiente transcripción literal de piezas faltantes/verificación de ritmos | audios/videos originales | PENDIENTE |
-| B4 | Duraciones del README reemplazadas por valores de `ffprobe`; total 11875.815 s ≈ 197.93 min | `02_Evidencias/Transcripciones/README.md` + `Fichas tecnicas/duraciones_reales_ffprobe.csv` | PENDIENTE |
-| B5 | Pendiente verificar guías contra todas las transcripciones | guías y transcripciones | PENDIENTE |
-| B6 | Referencia del primer commit de Frixon corregida a `9824b6a`; tabla de exclusiones con motivos reales sigue pendiente | `10_Autoria/declaracion_cambio_composicion_equipo.md` | PENDIENTE |
-| B7 | Pendiente recalcular corpus final después de resolver B1–B3/B6 | documentación del corpus | PENDIENTE |
-| C1–C5 | Pendientes de evidencia/codificación y scripts específicos | matriz, libro de códigos, doble codificación | PENDIENTE |
-| D1–D4 | Pendientes de reconstrucción de procedencia real y corrección de matriz/ERS | `04_Trazabilidad/` y ERS | PENDIENTE |
-| D5 | Pendiente ejecutar y corregir todas las rutas rotas | script de comprobación | PENDIENTE |
-| D6 | Naturaleza del `.tex` declarada como reconstrucción posicional; alineación final de versión pendiente | `01_ERS/README.md` | PENDIENTE |
-| E1 | README del MVP corregido para declarar prototipo estático, localStorage, sin backend/login y cámara simulada; Tabla 81 del ERS aún pendiente | `05_MVP/README.md` | PENDIENTE |
-| E2 | Pendiente ejecutar casos de prueba reales | CSV de ejecución + evidencia | PENDIENTE |
-| F1 | Pendiente repetir member checking real | grabación + acta | PENDIENTE |
-| F2 | Pendiente cotejo de actas, códigos, roles y fechas | walkthrough | PENDIENTE |
-| F3 | Pendiente fijar fechas reales de notas o aportar prueba contemporánea | notas + registros | PENDIENTE |
-| G1 | Pendiente revisión visual y autorización escrita antes de cualquier limpieza de historial | archivos sensibles | PENDIENTE |
-| G2 | Pendiente cotejo físico de consentimientos originales | originales | PENDIENTE |
-| G3 | Desviación ética y ausencia actual de aval firmado declaradas sin retrofechar | `08_Etica/declaracion_desviacion_etica.md` y `08_Etica/README.md` | PENDIENTE |
-| G4 | Procedencia diferenciada: 4 `Formato_*.docx` del equipo; `HCL - HOJA.docx` de la organización | `02_Evidencias/Documentos_Organizacion/README.md` | PENDIENTE |
-| G5 | Declaración de IA ampliada con drawio, conversión PDF→LaTeX, python-docx, RNF IA y preparación A4 | `10_Autoria/declaracion_uso_ia.md` | PENDIENTE |
-| H1–H3 | Pendientes de exportación original de Forms, recodificaciones e instrumento completo | cuestionario | PENDIENTE |
-| I1 | Pendiente alineación final al cerrar v2.3 y completar CHANGELOG desde 26/07 | README, CITATION, CHANGELOG | PENDIENTE |
-| I2 | Pendiente verificar lista exacta de los 4 archivos del depósito Zenodo 05/09 antes de corregir documentación | Zenodo `10.5281/zenodo.22315298` | PENDIENTE |
-| I3 | `.gitattributes` preparado con LF fijo y dependencias fijadas; falta ejecutar prueba final en clon Windows/autocrlf después de aplicar cambios | `.gitattributes`, requirements | PENDIENTE |
+| B2 | Pendiente información real de elegibilidad, reclutamiento, vínculo, indicaciones y criterio de inclusión/exclusión de cada participante | `02_Evidencias/elegibilidad.csv` | PENDIENTE |
+| B3 | Pendiente transcripción literal de piezas faltantes y verificación de ritmos/extremos de las transcripciones | audios/videos originales + transcripciones | PENDIENTE |
+| B4 | Duraciones del README reemplazadas por valores obtenidos mediante `ffprobe`; total documentado 11875.815 s ≈ 197.93 min. | `02_Evidencias/Transcripciones/README.md`, `02_Evidencias/Fichas tecnicas/duraciones_reales_ffprobe.csv` | `18b45a4b`, `bc6a8b82` |
+| B5 | Pendiente verificar y versionar las guías realmente utilizadas frente a las transcripciones | guías + transcripciones | PENDIENTE |
+| B6 | Se documentaron las exclusiones de `EV2-PAC-02` y las entrevistas PAC-10 a PAC-14, se preservó la trazabilidad de sus artefactos históricos y se corrigió el primer commit de Frixon a `9824b6a`. | `02_Evidencias/exclusiones_corpus.md`, `10_Autoria/declaracion_cambio_composicion_equipo.md` | `d0f5884f`, `086d6c3a` |
+| B7 | Pendiente unificar y recalcular la definición del corpus final después de resolver B1–B3 y revisar todas las referencias 18/19 sesiones/entrevistas | documentación del corpus | PENDIENTE |
+| C1 | Pendiente crear y verificar `citas_codificacion.csv` para las codificaciones vigentes y retirar codificaciones sin cita literal verificable | matriz + transcripciones | PENDIENTE |
+| C2 | Pendiente codificación verificable de EV2-PAC-07 con citas literales | matriz + transcripción PAC-07 | PENDIENTE |
+| C3 | Pendiente realizar doble codificación real sobre al menos 30 % del corpus final con 17 subtemas, trabajos independientes previos a comparación y κ por código con IC | `10_Autoria/doble_codificacion/` | PENDIENTE |
+| C4 | Script de saturación corregido para leer la matriz vigente, usar orden cronológico y excluir WALK; CSV y figura regenerados. | `02_Evidencias/Codificacion_Tematica/generar_curva_saturacion.py`, `02_Evidencias/Codificacion_Tematica/saturacion_actualizada.csv`, `02_Evidencias/Codificacion_Tematica/curva_saturacion_SICST.png` | `49a3ce06`, `17124d50` |
+| C5 | Historial de versiones del libro de códigos documentado, incluyendo la ampliación de 12 a 17 subtemas del 11/09/2026. | `02_Evidencias/Codificacion_Tematica/historial_libro_codigos.md` | `8b9ee24b` |
+| D1–D4 | Pendientes de reconstrucción verificable de procedencia real, corrección de afirmaciones de origen y actualización de matriz/ERS | `04_Trazabilidad/`, `01_ERS/` | PENDIENTE |
+| D5 | Pendiente ejecutar la comprobación de rutas/enlaces y corregir todas las referencias inexistentes hasta obtener 0 faltantes | script de comprobación + documentación | PENDIENTE |
+| D6 | Pendiente declarar correctamente la naturaleza del `.tex` como reconstrucción posicional o rehacer la fuente, y alinear la versión documental | `01_ERS/README.md`, ERS | PENDIENTE |
+| E1 | Pendiente declarar completamente el estado real del MVP —incluyendo almacenamiento local, ausencia de backend/login real y simulaciones— y corregir la Tabla 81 del ERS | `05_MVP/README.md`, ERS | PENDIENTE |
+| E2 | Pendiente ejecutar casos de prueba reales de los requisitos Must y registrar caso, fecha, resultado y evidencia | CSV de ejecución + evidencia | PENDIENTE |
+| F1 | Pendiente repetir member checking real con participantes del corpus, 17 subtemas, grabación y acta | grabación + acta | PENDIENTE |
+| F2 | Pendiente cotejo y corrección de actas, códigos, roles, fechas y evidencias de walkthrough | walkthrough | PENDIENTE |
+| F3 | Pendiente fijar fechas reales de notas de campo o aportar evidencia contemporánea que las respalde | notas + registros | PENDIENTE |
+| G1 | Pendiente revisión visual de información identificable y autorización escrita antes de cualquier eventual limpieza de historial | archivos sensibles | PENDIENTE |
+| G2 | Pendiente cotejo físico de consentimientos originales y retiro/declaración de cualquier dato que no pueda respaldarse | originales | PENDIENTE |
+| G3 | Pendiente crear la declaración de desviación ética y enlazarla desde el README; no existe aval institucional firmado en la evidencia actual | `08_Etica/README.md`, futura `08_Etica/declaracion_desviacion_etica.md` | PENDIENTE |
+| G4 | Pendiente declarar explícitamente la procedencia de los 4 `Formato_*.docx` y del archivo `HCL - HOJA.docx` | `02_Evidencias/Documentos_Organizacion/README.md` | PENDIENTE |
+| G5 | Pendiente completar la declaración de uso de IA con los `.drawio`, conversión PDF→LaTeX, documentos generados con `python-docx`, RNF de IA y demás usos efectivamente realizados | `10_Autoria/declaracion_uso_ia.md` | PENDIENTE |
+| H1–H3 | Pendientes de exportación original de Forms, documentación de recodificaciones e instrumento completo | cuestionario + exportación original | PENDIENTE |
+| I1 | Pendiente alineación final de versión/URL al cerrar v2.3 y completar CHANGELOG desde 26/07 | README, CITATION, CHANGELOG | PENDIENTE |
+| I2 | Pendiente verificar la lista exacta de los archivos del depósito Zenodo del 05/09 antes de corregir su documentación | Zenodo `10.5281/zenodo.22315298` | PENDIENTE |
+| I3 | Pendiente fijar finales de línea en `.gitattributes`, fijar versiones exactas de dependencias y realizar prueba final en Windows/autocrlf | `.gitattributes`, `07_Datos/requirements.txt` | PENDIENTE |
 
 ## Cierre
 
