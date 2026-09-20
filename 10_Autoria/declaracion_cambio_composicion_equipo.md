@@ -25,7 +25,7 @@ de trabajo del proyecto.
 **Morán Pilaguano Frixon Fernando** (usuario Git `FrixonMP`,
 `fmoranp@uteq.edu.ec`):
 
-- - Primer commit: `9824b6a`, 02/08/2026
+- Primer commit: `9824b6a`, 02/08/2026
 - **Último commit: `99d44f0`, 24/08/2026, 12:21 (hora Ecuador)**
 - Total de commits en el historial: 20
 - Desde esa fecha no registra ninguna otra contribución al repositorio.
