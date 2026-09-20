@@ -38,7 +38,10 @@ elicitación de requisitos. Por tanto, el registro OSF no se presenta como
 preregistro de la recolección de campo original.
 
 El registro corresponde al experimento comparativo humano–LLM y a la fase
-posterior de generación LLM, evaluación ciega y análisis. En consecuencia,
+posterior de generación LLM, evaluación de requisitos y análisis. En la
+documentación inicial esta evaluación fue descrita como “ciega”; sin embargo,
+la revisión posterior de la relación de los evaluadores con el corpus no
+permite sostener un cegamiento metodológico completo. En consecuencia,
 el contraste inferencial se reporta con alcance **exploratorio**, no como una
 prueba confirmatoria plenamente preregistrada.
 
@@ -59,7 +62,7 @@ El experimento considera:
 - 33 RF humanos;
 - 33 RF generados por LLM;
 - 4 evaluadores;
-- evaluación ciega;
+- origen humano o LLM no indicado explícitamente en la hoja de evaluación;
 - 5 dimensiones de calidad evaluadas mediante escala Likert de 1 a 5.
 
 Las dimensiones evaluadas son:
@@ -84,7 +87,41 @@ El análisis estadístico incluye:
 - IC bootstrap del 95 % de Cohen's dz;
 - 10 000 remuestreos bootstrap con semilla base 42.
 
-## Evaluación ciega
+## Evaluación original con origen no indicado en la hoja
+
+## Relación de los evaluadores con el estudio y limitaciones de independencia
+
+La revisión posterior de la procedencia de los evaluadores originales permitió
+identificar que sus nombres coinciden con participantes previamente vinculados
+al corpus y a actividades de levantamiento de información del proyecto,
+correspondientes a:
+
+- `EFT-01`
+- `EFT-02`
+- `EFT-03`
+- `FAM-01`
+
+Por esta razón, los cuatro evaluadores originales no se presentan como
+evaluadores independientes o completamente ajenos al estudio.
+
+La hoja de evaluación no mostraba explícitamente una columna que indicara el
+origen humano o LLM de cada requisito. No obstante, esta ocultación de la
+etiqueta de origen no constituye por sí sola evidencia suficiente de un
+cegamiento metodológico completo, debido a la relación previa de los
+evaluadores con el corpus y con actividades del proyecto.
+
+Esta aclaración no elimina ni sustituye la evidencia del procedimiento
+original. Los archivos, hojas, resultados y registros históricos se conservan
+para mantener la trazabilidad del experimento tal como fue ejecutado.
+
+La limitación se documenta retrospectivamente para evitar afirmar una
+independencia o un cegamiento que no pueden demostrarse con la evidencia
+disponible.
+
+Como acción correctiva, la repetición documentada en
+`06_Experimento/repeticion_A4/` utiliza tres evaluadores nuevos ajenos al corpus
+y al equipo, requisitos normalizados, orden aleatorio previamente definido y
+una rúbrica versionada antes de la recolección.
 
 Los cuatro evaluadores recibieron una hoja de evaluación con 66 requisitos
 identificados únicamente mediante códigos `ITEM-xxx` y su descripción.
@@ -103,8 +140,10 @@ Las columnas correspondientes a:
 se entregaron vacías para que cada evaluador registrara su propia
 puntuación de 1 a 5.
 
-De esta forma, los evaluadores realizaron su calificación sin disponer de la
-información correspondiente al origen real de cada requisito.
+La hoja no mostraba explícitamente la etiqueta correspondiente al origen real
+de cada requisito. Esta característica del instrumento se conserva como parte
+de la descripción histórica del procedimiento, pero no se utiliza como
+evidencia suficiente para afirmar un cegamiento metodológico completo.
 
 Las cuatro evaluaciones se realizaron durante una misma sesión de trabajo y de
 forma secuencial utilizando el mismo computador. Cada participante completó su
@@ -251,3 +290,48 @@ documento que haya quedado desfasado.
 
 No deben modificarse manualmente los CSV de resultados con el objetivo de
 forzar coincidencias entre documentos.
+## Corrección prospectiva A4 y análisis A5
+
+Como acción correctiva posterior al experimento original, se realizó una nueva
+repetición documentada en:
+
+`06_Experimento/repeticion_A4/`
+
+La repetición conserva separadas las evidencias del experimento original y los
+datos de la nueva ejecución.
+
+Las tres evaluaciones reales completadas se conservan en:
+
+`06_Experimento/repeticion_A4/evaluaciones_completadas/`
+
+y corresponden a `EVAL-01`, `EVAL-02` y `EVAL-03`.
+
+Cada evaluador calificó los mismos 66 requisitos normalizados y aleatorizados
+en las cinco dimensiones de calidad establecidas.
+
+El análisis reproducible solicitado en A5 se encuentra en:
+
+`06_Experimento/repeticion_A4/analisis/`
+
+Los archivos principales son:
+
+- `analisis_A5.py`
+- `resultados_fiabilidad_A5.csv`
+- `resultado_A5.md`
+
+El análisis A5 incluye:
+
+- ICC(2,1);
+- ICC(2,k);
+- alfa ordinal con intervalo de confianza;
+- κ de Fleiss;
+- 1000 remuestreos bootstrap por dimensión;
+- efecto mínimo detectable aproximado `dz ≈ 0,94` para 11 pares;
+- interpretación explícitamente exploratoria.
+
+Las cuatro evaluaciones originales y las tres evaluaciones de la repetición A4
+se mantienen separadas para conservar la trazabilidad histórica del
+experimento y de su corrección posterior.
+
+Las puntuaciones originales no se modifican retroactivamente para alterar los
+resultados estadísticos o los coeficientes de fiabilidad.
