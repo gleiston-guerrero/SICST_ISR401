@@ -1,33 +1,31 @@
 # Codificación temática — SICST
 
-Esta carpeta contiene el análisis cualitativo realizado sobre las entrevistas del proyecto **Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)**.
+Esta carpeta contiene el análisis cualitativo realizado sobre el corpus de entrevistas del proyecto **Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)**.
 
-La codificación temática permite identificar patrones, necesidades recurrentes, problemas del proceso actual de terapia física y elementos relevantes para la definición, validación y trazabilidad de requisitos del sistema.
+La codificación temática permite identificar patrones, necesidades recurrentes, problemas del proceso actual de terapia física y elementos relevantes para la definición, validación y trazabilidad de requisitos.
 
 ---
 
 # Objetivo
 
-El objetivo del análisis cualitativo es identificar temas recurrentes relacionados con:
+El objetivo del análisis cualitativo es identificar temas relacionados con:
 
 - seguimiento del proceso terapéutico;
 - comunicación entre pacientes y profesionales;
 - cumplimiento de ejercicios asignados;
-- registro y consulta de información relacionada con la terapia;
-- dificultades actuales del proceso de rehabilitación;
-- necesidades esperadas en una solución tecnológica de apoyo.
+- registro y consulta de información de terapia;
+- dificultades del proceso de rehabilitación;
+- necesidades esperadas en una solución tecnológica.
 
-Los resultados obtenidos sirven como evidencia para establecer la relación entre las necesidades identificadas durante el trabajo de campo y los requisitos definidos para el sistema SICST.
+Los resultados se utilizan como evidencia para relacionar necesidades identificadas durante el trabajo de campo con requisitos del sistema SICST.
 
 ---
 
-# Corpus de entrevistas
+# Corpus analítico vigente
 
-Para el análisis cualitativo principal se considera el corpus final conformado por **19 entrevistas anonimizadas**.
+Para el análisis cualitativo principal se utiliza actualmente un corpus de **16 entrevistas anonimizadas**.
 
-La distribución del corpus es la siguiente:
-
-## Pacientes o expacientes de terapia física
+## Pacientes o expacientes de terapia física — 8
 
 - EV2-PAC-01
 - EV2-PAC-03
@@ -38,144 +36,182 @@ La distribución del corpus es la siguiente:
 - EV2-PAC-08
 - EV2-PAC-09
 
-## Estudiantes de fisioterapia
+## Estudiantes de fisioterapia — 3
 
 - EFT-01
 - EFT-02
 - EFT-03
 
-## Familiares o cuidadores
+## Familiares o cuidadores — 4
 
 - FAM-01
 - FAM-02
 - FAM-03
 - FAM-04
 
-## Profesional de fisioterapia
+## Profesional relacionado con fisioterapia — 1
 
 - FIS-01
 
-Adicionalmente, se utilizaron dos sesiones walkthrough como evidencia complementaria de validación:
+Total:
+
+```text
+8 PAC + 3 EFT + 4 FAM + 1 FIS = 16 entrevistas
+```
+
+---
+
+# Evidencia walkthrough complementaria
+
+Se conservan adicionalmente como evidencia complementaria de validación:
 
 - WALK-NTEC-01
 - WALK-TEC-01
 
-Estas sesiones no se contabilizan como entrevistas independientes dentro del análisis de saturación cualitativa, sino como evidencia adicional para validar la percepción del sistema desde perfiles técnicos y no técnicos.
+Estas sesiones **no se contabilizan como entrevistas del corpus principal** y se excluyen del análisis de saturación temática.
+
+Otros artefactos históricos de walkthrough conservados en el repositorio tampoco deben incorporarse automáticamente al conteo de entrevistas solo por existir como archivos de evidencia.
 
 ---
 
 # Método de codificación
 
-La codificación temática fue realizada mediante categorías y subtemas derivados directamente de las transcripciones disponibles del corpus cualitativo.
+La codificación temática utiliza categorías y subtemas documentados en el libro de códigos vigente.
 
 Cada código se registra mediante presencia o ausencia del subtema:
 
-- **1:** existe evidencia suficiente del subtema dentro de la entrevista.
-- **0:** no se identificó evidencia suficiente relacionada con el subtema.
+- **1:** existe evidencia suficiente del subtema dentro de la entrevista;
+- **0:** no se identificó evidencia suficiente del subtema.
 
-Un valor igual a 0 no representa desacuerdo del participante, sino ausencia de evidencia suficiente para asignar dicho subtema.
+Un valor igual a `0` representa ausencia de evidencia suficiente para asignar el subtema; no representa necesariamente desacuerdo del participante.
+
+La verificación literal de las asignaciones positivas mediante citas de transcripción corresponde a la tarea C1 del plan de mejora y debe documentarse separadamente.
 
 ---
 
 # Artefactos de análisis
 
-Esta carpeta contiene los siguientes artefactos utilizados durante el análisis cualitativo.
-
 ## Libro de códigos
 
 Archivo:
 
+```text
 libro_codigos.csv
+```
 
-Contiene la definición de categorías, códigos y subtemas utilizados durante la codificación.
+Contiene la definición de categorías, códigos y subtemas.
+
+El historial de ampliación del libro de códigos se documenta en:
+
+```text
+historial_libro_codigos.md
+```
 
 ---
 
 ## Matriz de codificación
 
-Archivo:
+Archivo vigente:
 
-matriz_codificacion.csv
+```text
+matriz_codificacion_SICST.csv
+```
 
-Contiene la relación entre las entrevistas analizadas y los subtemas identificados durante el proceso de codificación.
+Contiene la relación entre las entrevistas analizadas y los subtemas registrados durante el proceso de codificación.
 
 ---
 
 ## Análisis de saturación
 
-Archivos:
+Archivos vigentes:
 
-- saturacion.csv
-- curva_saturacion.png
-- generar_curva_saturacion.py
+```text
+saturacion_actualizada.csv
+curva_saturacion_SICST.png
+generar_curva_saturacion.py
+```
 
-Estos artefactos permiten documentar la evolución de aparición de nuevos temas durante el análisis del corpus y generar la representación gráfica correspondiente.
+Estos artefactos documentan la evolución de aparición de nuevos temas durante el análisis del corpus principal.
+
+El script de saturación utiliza el orden cronológico documentado de las **16 entrevistas del corpus principal** y excluye los códigos `WALK` del cálculo.
 
 ---
 
 ## Triangulación
 
-Archivo:
+Archivo conservado actualmente en el repositorio:
 
-triangulacion.md
+```text
+triangulacion (1).md
+```
 
-Documenta la comparación entre las diferentes fuentes de evidencia:
-
-- entrevistas;
-- walkthrough;
-- necesidades identificadas;
-- requisitos derivados.
+Documenta la comparación entre diferentes fuentes de evidencia, incluyendo entrevistas, evidencia complementaria de walkthrough, necesidades identificadas y requisitos derivados.
 
 ---
 
 # Reproducibilidad
 
-Los datos procesados y scripts utilizados para generar resultados derivados se documentan adicionalmente en:
+Los datos procesados y scripts utilizados para resultados derivados se documentan adicionalmente en:
 
+```text
 07_Datos/
+```
 
-Cualquier modificación realizada sobre las transcripciones debe reflejarse posteriormente en:
+Cualquier modificación en la composición del corpus debe reflejarse posteriormente en:
 
 - matriz de codificación;
 - análisis de saturación;
 - triangulación;
-- resultados del manuscrito científico.
+- resultados del manuscrito científico;
+- documentación de trazabilidad;
+- `07_Datos/registro_correcciones.md`.
 
 ---
 
 # Integridad del análisis
 
-El análisis cualitativo utiliza únicamente las evidencias disponibles dentro del corpus definido para el proyecto SICST.
+El análisis cualitativo debe utilizar únicamente evidencia respaldada por los artefactos reales del corpus.
 
-No se agregan:
+No se deben agregar:
 
 - participantes inexistentes;
 - entrevistas no realizadas;
 - respuestas no disponibles;
-- resultados que no puedan ser generados mediante los artefactos correspondientes.
+- resultados sin respaldo verificable.
 
-Los cambios realizados sobre la composición del corpus deben mantenerse sincronizados entre:
+Los cambios en la composición del corpus deben mantenerse sincronizados entre:
 
 - transcripciones;
 - codificación temática;
-- análisis de saturación;
-- documentos de publicación.
+- saturación;
+- triangulación;
+- documentación final.
 
 ---
 
-# Relación con otras evidencias
+# Doble codificación
 
-La codificación temática se complementa con:
+Los artefactos históricos de doble codificación se conservan en:
 
-- transcripciones de entrevistas;
-- consentimientos informados;
-- fichas técnicas de entrevistas;
-- evidencias audiovisuales;
-- doble codificación independiente;
-- trazabilidad de requisitos.
-
-La doble codificación independiente y el cálculo del acuerdo entre codificadores se encuentran en:
-
+```text
 10_Autoria/doble_codificacion/
+```
 
-Estos artefactos permiten mantener la trazabilidad, transparencia y reproducibilidad del análisis realizado para el desarrollo del SICST.
+Su adecuación al requisito actualizado de la tarea C3 se revisa separadamente. La existencia de esos archivos no implica que C3 esté cerrada.
+
+---
+
+# Estado de la tarea B7
+
+Este README corrige la contradicción documental previa que indicaba un número distinto de entrevistas.
+
+La definición actualmente utilizada es:
+
+```text
+16 entrevistas del corpus principal
++ 2 sesiones WALK complementarias
+```
+
+Las sesiones WALK no se incluyen en saturación temática.
+
+La tarea B7 solo podrá considerarse completamente cerrada cuando se resuelvan las verificaciones pendientes de B1–B3 y se confirme que no modifican la composición final del corpus.
