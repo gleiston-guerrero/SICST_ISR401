@@ -26,10 +26,13 @@ DIMENSIONES = [
 SEMILLA = 20260918
 
 # Número de remuestreos para IC 95 % del alfa ordinal.
-# Puede aumentarse, por ejemplo:
-# A5_BOOTSTRAP=1000 python analisis_A5.py
-N_BOOTSTRAP = int(os.environ.get("A5_BOOTSTRAP", "200"))
+# Por defecto se utilizan 1000 remuestreos.
+# Puede modificarse temporalmente, por ejemplo:
+# A5_BOOTSTRAP=2000 python analisis_A5.py
+N_BOOTSTRAP = int(os.environ.get("A5_BOOTSTRAP", "1000"))
 
+# Efecto mínimo detectable aproximado declarado
+# para el análisis con 11 pares temáticos estrictos.
 MDE_DZ_11_PARES = 0.94
 
 CARPETA_SCRIPT = Path(__file__).resolve().parent
@@ -60,6 +63,7 @@ def normalizar_texto(valor):
         c for c in texto
         if unicodedata.category(c) != "Mn"
     )
+
     return " ".join(texto.split())
 
 
@@ -131,7 +135,8 @@ def leer_evaluacion(ruta):
 
     filas_puntuaciones = []
 
-    # Buscar las filas que realmente tienen 5 valores de 1 a 5.
+    # Buscar las filas que realmente tienen
+    # las cinco puntuaciones válidas de 1 a 5.
     for fila in range(fila_cabecera + 1, ws.max_row + 1):
 
         valores = [
@@ -173,24 +178,37 @@ def calcular_icc(matriz):
     matriz:
         filas = requisitos
         columnas = evaluadores
+
+    ICC(2,1):
+        acuerdo absoluto, efectos aleatorios,
+        evaluador individual.
+
+    ICC(2,k):
+        acuerdo absoluto, efectos aleatorios,
+        promedio de k evaluadores.
     """
 
     y = np.asarray(matriz, dtype=float)
 
     n, k = y.shape
 
+    if n < 2 or k < 2:
+        return np.nan, np.nan
+
     media_general = np.mean(y)
     medias_filas = np.mean(y, axis=1)
     medias_columnas = np.mean(y, axis=0)
 
     ss_filas = (
-        k * np.sum(
+        k
+        * np.sum(
             (medias_filas - media_general) ** 2
         )
     )
 
     ss_columnas = (
-        n * np.sum(
+        n
+        * np.sum(
             (medias_columnas - media_general) ** 2
         )
     )
@@ -213,25 +231,32 @@ def calcular_icc(matriz):
     denominador_21 = (
         ms_filas
         + (k - 1) * ms_error
-        + (k * (ms_columnas - ms_error) / n)
+        + (
+            k
+            * (ms_columnas - ms_error)
+            / n
+        )
     )
 
     denominador_2k = (
         ms_filas
-        + ((ms_columnas - ms_error) / n)
+        + (
+            (ms_columnas - ms_error)
+            / n
+        )
     )
 
     icc_21 = (
         (ms_filas - ms_error)
         / denominador_21
-        if denominador_21 != 0
+        if not math.isclose(denominador_21, 0)
         else np.nan
     )
 
     icc_2k = (
         (ms_filas - ms_error)
         / denominador_2k
-        if denominador_2k != 0
+        if not math.isclose(denominador_2k, 0)
         else np.nan
     )
 
@@ -270,16 +295,24 @@ def fleiss_kappa(matriz):
         / (n_items * n_raters)
     )
 
-    p_e = np.sum(p_categoria ** 2)
-
-    p_item = (
-        np.sum(conteos ** 2, axis=1)
-        - n_raters
-    ) / (
-        n_raters * (n_raters - 1)
+    p_e = np.sum(
+        p_categoria ** 2
     )
 
-    p_barra = np.mean(p_item)
+    p_item = (
+        np.sum(
+            conteos ** 2,
+            axis=1
+        )
+        - n_raters
+    ) / (
+        n_raters
+        * (n_raters - 1)
+    )
+
+    p_barra = np.mean(
+        p_item
+    )
 
     if math.isclose(1 - p_e, 0):
         return np.nan
@@ -305,9 +338,10 @@ def limites_latentes(valores):
     acumuladas = []
 
     for categoria in range(1, 5):
-        p = np.sum(
-            valores <= categoria
-        ) / n
+        p = (
+            np.sum(valores <= categoria)
+            / n
+        )
 
         p = np.clip(
             p,
@@ -334,7 +368,10 @@ def tabla_contingencia(x, y):
     )
 
     for a, b in zip(x, y):
-        tabla[int(a) - 1, int(b) - 1] += 1
+        tabla[
+            int(a) - 1,
+            int(b) - 1
+        ] += 1
 
     return tabla
 
@@ -342,11 +379,15 @@ def tabla_contingencia(x, y):
 def matriz_cdf(lim_x, lim_y, rho):
     """
     Calcula F(x,y) para todas las combinaciones
-    de límites usando una normal bivariada.
+    de límites usando una distribución normal
+    bivariada.
     """
 
     salida = np.zeros(
-        (len(lim_x), len(lim_y)),
+        (
+            len(lim_x),
+            len(lim_y)
+        ),
         dtype=float
     )
 
@@ -382,7 +423,9 @@ def matriz_cdf(lim_x, lim_y, rho):
             ],
         )
 
-        valores = np.atleast_1d(valores)
+        valores = np.atleast_1d(
+            valores
+        )
 
         for pos, valor in zip(
             posiciones,
@@ -422,8 +465,15 @@ def probabilidades_celdas(lim_x, lim_y, rho):
 
 
 def correlacion_policorica(x, y):
-    x = np.asarray(x, dtype=int)
-    y = np.asarray(y, dtype=int)
+    x = np.asarray(
+        x,
+        dtype=int
+    )
+
+    y = np.asarray(
+        y,
+        dtype=int
+    )
 
     if len(np.unique(x)) < 2:
         return np.nan
@@ -433,7 +483,11 @@ def correlacion_policorica(x, y):
 
     lim_x = limites_latentes(x)
     lim_y = limites_latentes(y)
-    tabla = tabla_contingencia(x, y)
+
+    tabla = tabla_contingencia(
+        x,
+        y
+    )
 
     def negativo_log_verosimilitud(rho):
         probs = probabilidades_celdas(
@@ -444,7 +498,8 @@ def correlacion_policorica(x, y):
 
         return -float(
             np.sum(
-                tabla * np.log(probs)
+                tabla
+                * np.log(probs)
             )
         )
 
@@ -452,13 +507,17 @@ def correlacion_policorica(x, y):
         negativo_log_verosimilitud,
         bounds=(-0.98, 0.98),
         method="bounded",
-        options={"xatol": 1e-4},
+        options={
+            "xatol": 1e-4
+        },
     )
 
     if not resultado.success:
         return np.nan
 
-    return float(resultado.x)
+    return float(
+        resultado.x
+    )
 
 
 # ============================================================
@@ -467,8 +526,9 @@ def correlacion_policorica(x, y):
 
 def alfa_ordinal(matriz):
     """
-    Alfa estandarizado a partir de la matriz
-    de correlaciones policóricas entre evaluadores.
+    Alfa ordinal estandarizado calculado
+    a partir de la matriz de correlaciones
+    policóricas entre evaluadores.
     """
 
     x = np.asarray(
@@ -502,13 +562,17 @@ def alfa_ordinal(matriz):
 
     suma = np.sum(r)
 
-    if math.isclose(suma, 0):
+    if math.isclose(
+        suma,
+        0
+    ):
         return np.nan
 
     alpha = (
         k / (k - 1)
     ) * (
-        1 - (k / suma)
+        1
+        - (k / suma)
     )
 
     return float(alpha)
@@ -519,6 +583,12 @@ def intervalo_bootstrap_alfa(
     n_bootstrap=N_BOOTSTRAP,
     semilla=SEMILLA,
 ):
+    """
+    Intervalo de confianza percentil del 95 %
+    para alfa ordinal mediante remuestreo
+    bootstrap de los requisitos.
+    """
+
     rng = np.random.default_rng(
         semilla
     )
@@ -540,7 +610,10 @@ def intervalo_bootstrap_alfa(
             size=n
         )
 
-        muestra = x[indices, :]
+        muestra = x[
+            indices,
+            :
+        ]
 
         try:
             alpha = alfa_ordinal(
@@ -554,7 +627,11 @@ def intervalo_bootstrap_alfa(
             continue
 
     if len(valores) < 20:
-        return np.nan, np.nan, len(valores)
+        return (
+            np.nan,
+            np.nan,
+            len(valores)
+        )
 
     inferior, superior = np.percentile(
         valores,
@@ -569,7 +646,18 @@ def intervalo_bootstrap_alfa(
 
 
 # ============================================================
-# ANÁLISIS
+# FORMATO
+# ============================================================
+
+def fmt(valor):
+    if not np.isfinite(valor):
+        return "NA"
+
+    return f"{valor:.3f}"
+
+
+# ============================================================
+# ANÁLISIS PRINCIPAL
 # ============================================================
 
 def main():
@@ -614,7 +702,8 @@ def main():
     for indice, dimension in enumerate(
         DIMENSIONES
     ):
-        # Forma requerida:
+
+        # Forma:
         # requisitos × evaluadores
         matriz = evaluaciones[
             :,
@@ -639,14 +728,17 @@ def main():
             matriz
         )
 
-        ci_low, ci_high, boot_validos = (
-            intervalo_bootstrap_alfa(
-                matriz,
-                semilla=(
-                    SEMILLA
-                    + indice
-                ),
-            )
+        (
+            ci_low,
+            ci_high,
+            boot_validos,
+        ) = intervalo_bootstrap_alfa(
+            matriz,
+            n_bootstrap=N_BOOTSTRAP,
+            semilla=(
+                SEMILLA
+                + indice
+            ),
         )
 
         resultados.append({
@@ -690,6 +782,7 @@ def main():
             fila_salida = {}
 
             for clave, valor in fila.items():
+
                 if isinstance(
                     valor,
                     (float, np.floating)
@@ -699,6 +792,7 @@ def main():
                         if not np.isfinite(valor)
                         else f"{valor:.6f}"
                     )
+
                 else:
                     fila_salida[clave] = valor
 
@@ -736,22 +830,40 @@ def main():
     ]
 
     for r in resultados:
-
-        def fmt(valor):
-            if not np.isfinite(valor):
-                return "NA"
-            return f"{valor:.3f}"
-
         lineas.append(
             f"| {r['dimension']} "
             f"| {fmt(r['ICC_2_1'])} "
             f"| {fmt(r['ICC_2_k'])} "
             f"| {fmt(r['alfa_ordinal'])} "
-            f"| [{fmt(r['alfa_ordinal_IC95_inf'])}, {fmt(r['alfa_ordinal_IC95_sup'])}] "
+            f"| [{fmt(r['alfa_ordinal_IC95_inf'])}, "
+            f"{fmt(r['alfa_ordinal_IC95_sup'])}] "
             f"| {fmt(r['fleiss_kappa'])} |"
         )
 
+    # ========================================================
+    # INTERPRETACIÓN
+    # ========================================================
+
     lineas.extend([
+        "",
+        "## Interpretación de la fiabilidad",
+        "",
+        "Los coeficientes obtenidos son cercanos a cero o negativos "
+        "en la mayoría de las dimensiones. Esto indica que, en esta "
+        "muestra, el grado de acuerdo entre los tres evaluadores fue bajo.",
+        "",
+        "Los valores negativos de ICC, alfa ordinal o kappa no se "
+        "reemplazan por cero ni se modifican, ya que corresponden a "
+        "los resultados producidos por las puntuaciones originales.",
+        "",
+        "Los intervalos de confianza del alfa ordinal son amplios e "
+        "incluyen valores próximos a cero, por lo que las estimaciones "
+        "de fiabilidad deben interpretarse con cautela.",
+        "",
+        "Estos resultados deben interpretarse considerando el número "
+        "reducido de evaluadores y el carácter exploratorio del estudio. "
+        "No se utilizan como evidencia de equivalencia entre los dos "
+        "procedimientos.",
         "",
         "## Potencia y alcance inferencial",
         "",
@@ -760,8 +872,8 @@ def main():
         "para la interpretación del estudio es aproximadamente "
         f"`dz ≈ {MDE_DZ_11_PARES:.2f}`.",
         "",
-        "Por esta limitación de tamaño muestral, los resultados se interpretan "
-        "como **exploratorios**.",
+        "Por esta limitación de tamaño muestral, los resultados se "
+        "interpretan como **exploratorios**.",
         "",
         "La ausencia de significancia estadística no debe interpretarse "
         "como demostración de equivalencia entre requisitos humanos y LLM.",
@@ -778,6 +890,10 @@ def main():
         "",
         "Las puntuaciones originales no se modifican durante el análisis.",
         "",
+        f"El intervalo de confianza del alfa ordinal se genera con hasta "
+        f"{N_BOOTSTRAP} remuestreos bootstrap por dimensión y semilla base "
+        f"`{SEMILLA}`.",
+        "",
     ])
 
     SALIDA_MD.write_text(
@@ -785,13 +901,34 @@ def main():
         encoding="utf-8"
     )
 
+    # ========================================================
+    # RESUMEN EN TERMINAL
+    # ========================================================
+
+    print()
+    print("=" * 72)
+    print("RESUMEN A5")
+    print("=" * 72)
+
+    for r in resultados:
+        print(
+            f"{r['dimension']}: "
+            f"ICC(2,1)={fmt(r['ICC_2_1'])}, "
+            f"ICC(2,k)={fmt(r['ICC_2_k'])}, "
+            f"alfa={fmt(r['alfa_ordinal'])}, "
+            f"kappa={fmt(r['fleiss_kappa'])}, "
+            f"bootstrap válidos={r['bootstrap_validos']}"
+        )
+
     print()
     print(
         f"Generado: {SALIDA_CSV}"
     )
+
     print(
         f"Generado: {SALIDA_MD}"
     )
+
     print()
     print(
         "A5 finalizado correctamente."
