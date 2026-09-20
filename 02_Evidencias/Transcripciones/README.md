@@ -65,13 +65,13 @@ Estas entrevistas adicionales corresponden a perfiles no técnicos y técnicos u
 
 Los archivos siguen la siguiente estructura:
 
-```
+```text
 TRANSCRIPCIONES_[CODIGO]_Entrevista.txt
 ```
 
 Ejemplo:
 
-```
+```text
 TRANSCRIPCIONES_EFT-01_Entrevista.txt
 ```
 
@@ -110,28 +110,44 @@ No se incluyen nombres reales ni información personal que permita identificar d
 
 # Duración de entrevistas
 
-La duración registrada del corpus es la siguiente:
+Las siguientes duraciones corresponden a la duración técnica de los archivos multimedia de las **18 entrevistas del corpus**, obtenida mediante `ffprobe`.
 
 | Entrevista | Duración |
-|---|---|
-| EV2-PAC-01 | 08:52 |
-| EV2-PAC-03 | 07:36 |
-| EV2-PAC-04 | 08:30 |
-| EV2-PAC-05 | 14:16 |
-| EV2-PAC-06 | 13:22 |
-| EV2-PAC-07 | 10:30 |
-| EV2-PAC-08 | 10:08 |
-| EV2-PAC-09 | 08:42 |
-| EFT-01 | 19:13 |
-| EFT-02 | 18:44 |
-| EFT-03 | 14:41 |
-| FAM-01 | 14:32 |
-| FAM-02 | 14:44 |
-| FAM-03 | 14:54 |
-| FAM-04 | 10:02 |
-| FIS-01 | 15:30 |
-| WALK-NTEC-01 | 09:04 |
-| WALK-TEC-01 | 30:04 |
+|---|---:|
+| EV2-PAC-01 | 04:46 |
+| EV2-PAC-03 | 04:17 |
+| EV2-PAC-04 | 07:25 |
+| EV2-PAC-05 | 13:09 |
+| EV2-PAC-06 | 12:15 |
+| EV2-PAC-07 | 09:26 |
+| EV2-PAC-08 | 10:00 |
+| EV2-PAC-09 | 07:37 |
+| EFT-01 | 17:09 |
+| EFT-02 | 17:27 |
+| EFT-03 | 13:59 |
+| FAM-01 | 14:34 |
+| FAM-02 | 11:06 |
+| FAM-03 | 13:05 |
+| FAM-04 | 12:39 |
+| FIS-01 | 07:13 |
+| WALK-NTEC-01 | 03:57 |
+| WALK-TEC-01 | 17:52 |
+
+**Duración total del corpus:** `11 875,815 s`, equivalente a aproximadamente **197,93 minutos (3 h 17 min 56 s)**.
+
+Las duraciones anteriores documentadas en este README no correspondían con precisión a la duración técnica de los archivos multimedia. Los valores actuales fueron verificados mediante `ffprobe` y se encuentran documentados en:
+
+```text
+02_Evidencias/Fichas tecnicas/duraciones_reales_ffprobe.csv
+```
+
+Para `EFT-01`, la duración total corresponde a la suma de las dos partes de su entrevista:
+
+- Parte 1: `00:09:10,248`
+- Parte 2: `00:07:58,752`
+- Total: `00:17:09,000`
+
+Los archivos de walkthrough independientes y las preguntas adicionales separadas no se incorporan al cálculo de duración de las **18 entrevistas** listadas en esta sección.
 
 ---
 
@@ -147,7 +163,7 @@ Las transcripciones se utilizan como fuente para:
 
 Los resultados derivados se encuentran en:
 
-```
+```text
 02_Evidencias/Codificacion_Tematica/
 ```
 
