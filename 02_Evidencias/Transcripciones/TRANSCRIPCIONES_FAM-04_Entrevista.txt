@@ -1,69 +1,143 @@
-CÓDIGO: FAM-04
-PERFIL: Familiar o cuidador de paciente
+CÓDIGO HISTÓRICO: FAM-04
+PERFIL REAL: Paciente/expaciente
 TIPO: Entrevista
+FECHA: 17/09/2026
 
-Buenas tardes. Antes de comenzar con las preguntas le voy a presentar el consentimiento informado. El objetivo de este documento es dar la información necesaria para que usted decida si acepta participar en la investigación para el desarrollo de un sistema de gestión de terapia física, a cargo del docente de la materia de Ingeniería de Requerimientos. La entrevista es con fines puramente académicos y educativos para levantar requerimientos. 
+NOTA DE PROCEDENCIA:
+Versión normalizada a partir de la transcripción automática disponible y del guion/cuestionario proporcionado para la sesión.
+Se corrigieron errores evidentes de reconocimiento automático y concordancia de género.
+Esta versión no debe describirse como “cotejada palabra por palabra contra el audio” si no se realizó esa escucha.
 
-¿Me otorgaría su consentimiento para realizar la grabación de la llamada y el audio?
+ENTREVISTADOR:
+Hoy vamos a realizar las preguntas correspondientes al levantamiento de información del proyecto. Primero comenzamos con el consentimiento informado. El objetivo de este documento es proporcionar la información necesaria para que usted decida si desea participar o no en la investigación relacionada con el desarrollo de un sistema de control y seguimiento de terapia física, bajo la dirección del docente de la materia de Ingeniería de Requerimientos. Esta sesión va a ser grabada. Antes de comenzar necesito su autorización para grabar la sesión. ¿Me da autorización para poder grabar?
 
-Ah, sí, sí, claro. No hay problema, estoy de acuerdo.
+PARTICIPANTE:
+Sí, le doy mi autorización.
 
-Listo, muchas gracias. Vamos con la primera pregunta: ¿Ha ayudado o acompañado a algún familiar durante un proceso de terapia física o rehabilitación?
+ENTREVISTADOR:
+Pregunta 1. ¿Ha recibido terapia física o rehabilitación? ¿Por qué motivo general?
 
-Sí, a ver... o sea, estuve apoyando a mi mamá hace como dos años, creo. Ella tuvo una lesión media fea en la rodilla. Y bueno, la acompañaba a las citas del centro y más que nada en la casa, ¿no? Porque le mandaron bastantes ejercicios y al principio como que se le traspapelaba todo, no se acordaba bien.
+PARTICIPANTE:
+Sí. Recibí terapia después de una cirugía de reemplazo de rodilla causada por el desgaste de la articulación. Mi objetivo era volver a caminar con seguridad, subir escalones y realizar actividades de la casa sin depender siempre del bastón.
 
-Segunda pregunta: ¿Qué tipo de ayuda suele necesitar esa persona para cumplir los ejercicios indicados en casa?
+ENTREVISTADOR:
+Pregunta 2. Durante su terapia, ¿recibió ejercicios para realizar en casa?
 
-Mmm... más que nada que uno le esté acordando la hora, porque se le pasaba el día en otras cosas y se olvidaba. También ayudarle a mover las cosas, la silla, ponerle la colchoneta en el piso... Y leerle la hoja del doctor, porque la verdad la letra estaba súper chiquita y ella no entendía si eran tres series o cuántas veces tenía que doblar la pierna, entonces yo le leía.
+PARTICIPANTE:
+Sí. Me enviaron ejercicios para doblar y estirar la rodilla, fortalecer el muslo y practicar la marcha. Algunos días debía hacerlos dos veces y otros tres, pero en casa no siempre recordaba el horario indicado.
 
-Pregunta tres: ¿Qué dificultades ha observado para recordar los ejercicios, repeticiones, horarios o indicaciones?
+ENTREVISTADOR:
+Pregunta 3. ¿Qué indicaciones le daba el fisioterapeuta sobre los ejercicios?
 
-Lo que más pasaba era que confundía las repeticiones. Decía "oye, ¿este era de diez o de catorce?". O a veces no sabía si el movimiento era rápido o despacio. También la hoja donde anotaban todo a veces se le perdía o no nos acordábamos si x ejercicio le tocaba todos los días o día por medio.
+PARTICIPANTE:
+Me mostraba la posición correcta, las repeticiones, cuánto tiempo mantener cada movimiento y cuándo aplicar frío. También me entregó una hoja impresa, aunque varias instrucciones estaban escritas con letra pequeña y se me dificultaba revisarlas mientras hacía la rutina.
 
-Cuarta pregunta: ¿Ha observado alguna vez que la persona no recuerde correctamente cómo realizar un ejercicio?
+ENTREVISTADOR:
+Pregunta 4. ¿Alguna vez olvidó cómo hacer un ejercicio, cuántas repeticiones hacer o cuándo realizarlo?
 
-Sí, varias veces. Una vez me acuerdo que estaba haciendo un estiramiento de pierna pero estaba girando la cadera así como de lado, medio raro, y yo le dije "oye, me parece que así no era". Pero como yo tampoco soy fisioterapeuta nos quedamos en la duda de si lo estaba haciendo bien o si se podía lastimar. Al final prefirió no hacerlo y esperar a la siguiente consulta.
+PARTICIPANTE:
+Sí. Una vez confundí el ejercicio para ganar flexión con el de extensión y también olvidé si debía repetirlo por la mañana y por la tarde. Cuando cambiaron mi rutina continué dos días con la hoja anterior porque no entendí cuál era la vigente.
 
-Siguiente pregunta: ¿Qué información considera que ayudaría al familiar o cuidador a apoyar mejor al paciente?
+ENTREVISTADOR:
+Pregunta 5. ¿Qué dificultades tuvo al realizar ejercicios sin supervisión?
 
-A mí me serviría que la app muestre solo lo del día, bien directo. O sea, el nombre del ejercicio, las repeticiones y capaz un video súper cortito de cómo se hace. Y no sé, una nota pequeña que diga "cuidado con doblar mucho la espalda", cositas así básicas para que si yo la veo haciendo mal, la pueda corregir.
+PARTICIPANTE:
+Me daba temor perder el equilibrio al realizar ejercicios de pie. Además, por la tarde la rodilla se inflamaba más y no sabía si debía terminar la rutina, reducir las repeticiones o esperar hasta el día siguiente.
 
-Sexta pregunta: ¿Considera útil recibir recordatorios cuando el paciente tiene ejercicios pendientes y por qué?
+ENTREVISTADOR:
+Pregunta 6. ¿Qué le ayudaba a recordar o cumplir sus ejercicios?
 
-Sí, pero o sea, no a cada rato. Que primero le llegue la notificación a ella a su celular. Si ya pasan, no sé, un par de horas y ella no ha hecho nada o no ha marcado que ya cumplió, ahí recién que me mande un aviso a mí. Así yo le digo "oye, acuérdate de la rutina". Porque si me llegan notificaciones a mí a cada rato, la verdad uno se cansa y termina ignorando el teléfono.
+PARTICIPANTE:
+Mi hermano me ayudaba a organizar los horarios y yo marcaba cada rutina en una hoja pegada en la refrigeradora. Sin embargo, si estaba solo o salía a una consulta, olvidaba registrar lo que ya había realizado.
 
-Pregunta siete: ¿Qué información sobre el progreso del paciente considera que debería poder ver un familiar autorizado?
+ENTREVISTADOR:
+Pregunta 7. ¿Qué información le hubiera gustado tener más clara durante su tratamiento?
 
-Algo sencillo, un resumen básico. Como un calendario con días en verde si cumplió o en rojo si no lo hizo, y si tuvo algún problema. Tampoco necesito saber los detalles médicos ni qué músculo le dolía exactamente, solo ver si está siendo constante o si necesita que la motive un poco.
+PARTICIPANTE:
+Me habría gustado saber qué nivel de dolor era esperado, cuándo la inflamación requería avisar al fisioterapeuta y qué metas debía alcanzar cada semana. También necesitaba indicaciones más claras para dejar progresivamente el bastón.
 
-Octava pregunta: ¿Qué preocupación tendría respecto al uso de cámara, imágenes o videos durante los ejercicios?
+ENTREVISTADOR:
+Pregunta 8. ¿Le resultaba fácil saber si estaba avanzando en su recuperación?
 
-A ver, ahí sí me daría un poco de recelo si la cámara se queda prendida todo el tiempo o si graba partes de la casa que nada que ver. Debería activarse únicamente cuando ella le dé clic a empezar el ejercicio y que salga un ícono rojo bien claro avisando que está grabando. Y que esos videos no se queden guardados en cualquier lado, obviamente.
+PARTICIPANTE:
+No siempre. Había días en que caminaba mejor y otros en que me sentía más rígido, por lo que pensaba que estaba retrocediendo. Habría sido útil comparar la flexión de la rodilla, el dolor y la distancia caminada durante varias semanas.
 
-Pregunta nueve: ¿Cómo debería solicitarse el permiso del paciente antes de compartir información con un familiar?
+ENTREVISTADOR:
+Pregunta 9. ¿Qué información considera importante registrar después de realizar una rutina, por ejemplo, dolor, cansancio o dificultad?
 
-Que el sistema le pregunte directamente a ella en la pantalla. Tipo un mensaje que diga "¿Quieres darle acceso a fulanito?" y que le deje marcar casillas. Por ejemplo: "Ver si hizo los ejercicios: Sí/No", "Recibir alertas: Sí/No". Que ella controle qué comparte y qué no.
+PARTICIPANTE:
+Registraría el dolor antes y después de la rutina, la inflamación, cuánto pude doblar la rodilla, si utilicé bastón, los ejercicios completados y cualquier pérdida de equilibrio. También anotaría si tomé un analgésico antes de hacerlos.
 
-Décima pregunta: Si el paciente revoca ese permiso, ¿considera que el familiar debería perder inmediatamente el acceso?
+ENTREVISTADOR:
+Pregunta 10. ¿Qué le preocuparía sobre el uso de imágenes, cámara o datos personales durante un seguimiento terapéutico?
 
-Sí, de una. Si ella quita el permiso, a mí se me debería cerrar esa pantalla al instante y no dejarme ver nada más. La privacidad de ella está primero, así yo sea su familiar.
+PARTICIPANTE:
+Me preocuparía que la cámara muestre el interior de mi casa o grabe a otras personas que pasan por el lugar. Quisiera poder elegir cuándo se activa, ver una señal clara mientras funciona y confirmar que el video no quede guardado sin mi permiso.
 
-Pregunta once: ¿Qué tan sencilla tendría que ser una aplicación para que la pueda utilizar una persona con poca experiencia tecnológica?
+ENTREVISTADOR:
+Pregunta 11. ¿Qué información sobre su tratamiento considera privada?
 
-Súper intuitiva, la verdad. Letras grandes, botones claros y que al entrar no haya mil opciones, sino lo principal: "Hacer ejercicios de hoy" y "Ver avance". Si le ponen menús raros o botones chiquitos, la gente mayor se traba y ya no la quiere usar.
+PARTICIPANTE:
+Considero privados el diagnóstico, la fecha de la cirugía, los medicamentos, los videos de mi movimiento y las observaciones sobre mi capacidad para caminar. No quisiera que esa información la vea cualquier familiar o persona que use mi teléfono.
 
-Pregunta doce: Si la información sobre el paciente debe mostrarse clara, ¿qué datos necesitaría ver y cómo deberían presentarse?
+ENTREVISTADOR:
+Pregunta 12. ¿Quién debería poder ver información sobre su avance: solo usted, el fisioterapeuta o algún familiar autorizado?
 
-Cosas puntuales: la fecha, el estado de la rutina —si está hecha, pendiente o no la hizo— y si saltó alguna alerta. Todo con palabras normales, sin esos términos médicos raros que usan los doctores.
+PARTICIPANTE:
+Yo y el fisioterapeuta deberíamos ver toda la información. Mi hermano podría recibir recordatorios y conocer si cumplí la rutina, pero no debería ver el diagnóstico completo ni los videos, a menos que yo lo autorice.
 
-Pregunta trece: Si una alerta debe enviarse ante una situación importante, ¿qué situaciones concretas deberían activarla?
+ENTREVISTADOR:
+Pregunta 13. ¿Qué problema considera más común cuando una persona hace terapia desde casa?
 
-Bueno, si ella aplasta un botón de "necesito ayuda", si marca que sintió un dolor muy fuerte haciendo un ejercicio, o si lleva dos días seguidos sin entrar a la aplicación. Cuestiones así de peso. Si solo le dolió un poquito o estaba cansada, eso que quede anotado en el sistema pero no para mandarme una alerta urgente.
+PARTICIPANTE:
+Creo que lo más común es suspender los ejercicios por miedo al dolor o realizarlos con una postura incorrecta cuando no hay nadie cerca. En personas mayores también puede existir riesgo de caída si el ejercicio requiere estar de pie.
 
-Última pregunta: Para cerrar, ¿qué función no debería faltar para ayudar al paciente sin invadir su privacidad?
+ENTREVISTADOR:
+Pregunta 14. ¿Qué tipo de apoyo considera útil para cumplir mejor una rutina de ejercicios?
 
-Un botón directo para pedir ayuda a la familia y la lista de ejercicios del día. Con eso uno como familiar apoya bastante sin andar revisando las conversaciones privadas con el fisioterapeuta ni su historia médica.
+PARTICIPANTE:
+Me servirían instrucciones por voz, letras grandes, una imagen por cada paso y un botón para avisar que siento dolor o inseguridad. También sería útil que un familiar autorizado reciba una alerta únicamente cuando yo no complete varias sesiones.
 
-Listo, eso sería todo por la entrevista. Le agradezco mucho por su tiempo y por sus respuestas, nos van a servir bastante para el proyecto.
+ENTREVISTADOR:
+Pregunta 15. ¿Qué recomendaría mejorar en el seguimiento de pacientes durante terapia física?
 
-No, de nada, un gusto. Ojalá les vaya bien con el proyecto.
+PARTICIPANTE:
+Recomendaría que el plan diario sea sencillo, muestre con claridad qué cambió y permita informar dolor o inflamación sin esperar a la próxima cita. El fisioterapeuta debería responder o ajustar la rutina cuando considere necesario.
+
+ENTREVISTADOR:
+Vamos con unas preguntas adicionales.
+
+Pregunta 16. Usted mencionó que el sistema debería ser fácil de usar. ¿Qué tareas debería poder completar sin ayuda y en cuántos pasos como máximo?
+
+PARTICIPANTE:
+Debería poder abrir la rutina del día e iniciarla con un botón grande, en un máximo de dos acciones. También necesitaría letras legibles y una opción para escuchar las instrucciones sin tener que leer toda la pantalla.
+
+ENTREVISTADOR:
+Pregunta 17. Cuando habla de recibir recordatorios a tiempo, ¿con cuánta anticipación y por qué medio le servirían?
+
+PARTICIPANTE:
+Preferiría un aviso treinta minutos antes y otro solo si no he iniciado la sesión. Me serviría una notificación con sonido o vibración en el teléfono y la posibilidad de avisar a mi hermana si yo acepto esa ayuda.
+
+ENTREVISTADOR:
+Pregunta 18. Si la información debe mostrarse clara, ¿qué elementos visuales o explicaciones necesitaría?
+
+PARTICIPANTE:
+Necesitaría fotografías grandes, una instrucción por pantalla, demostraciones lentas y mensajes que diferencien el dolor esperado de una señal de alerta. Los botones principales deberían tener texto, no solamente símbolos.
+
+ENTREVISTADOR:
+Pregunta 19. Cuando solicita que sus datos estén seguros, ¿quién no debería tener acceso y cómo autorizaría a otra persona?
+
+PARTICIPANTE:
+No deberían entrar vecinos, familiares no autorizados ni otras personas que utilicen mi teléfono. Autorizaría a mi hermana mediante un código temporal y debería existir una opción sencilla para retirar ese permiso.
+
+ENTREVISTADOR:
+Pregunta 20. Si el seguimiento debe ser completo, ¿qué información no debería faltar en el registro?
+
+PARTICIPANTE:
+No deberían faltar el dolor antes y después, la inflamación, la movilidad, el uso de bastón, los ejercicios completados, los horarios y cualquier caída o pérdida de equilibrio. También debería quedar registrado qué profesional modificó la rutina.
+
+ENTREVISTADOR:
+Eso es todo por el momento. Le agradezco mucho por esta entrevista y por compartir su punto de vista y su opinión.
+
+PARTICIPANTE:
+Yo también le agradezco por escucharme.
