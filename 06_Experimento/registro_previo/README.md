@@ -26,9 +26,9 @@ fijo.
 **Corrección respecto de una versión anterior de este README:** la marca
 temporal del registro (2026-09-12, 19:50 hora Ecuador) es **posterior**,
 no anterior, a la generación del conjunto de requisitos LLM y a la
-recolección de las puntuaciones de la evaluación ciega.
+recolección de las puntuaciones de la evaluación original con origen no indicado en la hoja.
 
-Los metadatos internos de las cuatro hojas de evaluación ciega registran su
+Los metadatos internos de las cuatro hojas de evaluación originales registran su
 último guardado el 2026-09-12 entre las 13:11 y las 13:16 hora Ecuador,
 más de seis horas antes del registro. El conjunto LLM se generó ese mismo día,
 antes de la sesión de evaluación.
@@ -38,7 +38,7 @@ estudio:
 
 - entrevistas de campo;
 - generación del conjunto LLM;
-- evaluación ciega.
+- evaluación original con origen no indicado en la hoja.
 
 El análisis estadístico se reporta como **exploratorio**, no como
 confirmatorio preregistrado, en concordancia con esta cronología real.
