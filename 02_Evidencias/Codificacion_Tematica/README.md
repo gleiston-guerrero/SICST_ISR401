@@ -25,7 +25,7 @@ Los resultados se utilizan como evidencia para relacionar necesidades identifica
 
 Para el análisis cualitativo principal se utiliza actualmente un corpus de **16 entrevistas anonimizadas**.
 
-## Pacientes o expacientes de terapia física — 8
+## Pacientes o expacientes de terapia física — 9
 
 - EV2-PAC-01
 - EV2-PAC-03
@@ -35,6 +35,7 @@ Para el análisis cualitativo principal se utiliza actualmente un corpus de **16
 - EV2-PAC-07
 - EV2-PAC-08
 - EV2-PAC-09
+- FAM-04 *(código histórico conservado; perfil real: paciente/expaciente)*
 
 ## Estudiantes de fisioterapia — 3
 
@@ -42,12 +43,11 @@ Para el análisis cualitativo principal se utiliza actualmente un corpus de **16
 - EFT-02
 - EFT-03
 
-## Familiares o cuidadores — 4
+## Familiares o cuidadores — 3
 
 - FAM-01
 - FAM-02
 - FAM-03
-- FAM-04
 
 ## Profesional relacionado con fisioterapia — 1
 
@@ -56,7 +56,7 @@ Para el análisis cualitativo principal se utiliza actualmente un corpus de **16
 Total:
 
 ```text
-8 PAC + 3 EFT + 4 FAM + 1 FIS = 16 entrevistas
+9 participantes con perfil paciente/expaciente + 3 EFT + 3 FAM + 1 FIS = 16 entrevistas
 ```
 
 ---
