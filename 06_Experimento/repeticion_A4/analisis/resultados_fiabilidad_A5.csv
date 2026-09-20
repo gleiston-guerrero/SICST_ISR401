@@ -1,0 +1,6 @@
+﻿dimension,n_requisitos,n_evaluadores,ICC_2_1,ICC_2_k,alfa_ordinal,alfa_ordinal_IC95_inf,alfa_ordinal_IC95_sup,bootstrap_validos,fleiss_kappa,MDE_dz_11_pares_aprox,alcance
+Completitud,66,3,-0.020920,-0.065499,-0.106841,-0.737191,0.265996,1000,-0.056723,0.940000,exploratorio
+Ausencia de ambigüedad,66,3,-0.017708,-0.055075,-0.037896,-0.671015,0.301261,1000,-0.001915,0.940000,exploratorio
+Verificabilidad,66,3,-0.081904,-0.293848,-0.350149,-1.265773,0.135292,1000,-0.041465,0.940000,exploratorio
+Corrección respecto a la fuente,66,3,0.019331,0.055833,0.033382,-0.576510,0.399068,1000,0.023588,0.940000,exploratorio
+Consistencia interna,66,3,-0.023198,-0.072980,-0.121303,-0.758539,0.252510,1000,-0.056289,0.940000,exploratorio
