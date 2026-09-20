@@ -186,3 +186,16 @@ Cualquier modificación en la composición del corpus debe actualizarse también
 - análisis de saturación;
 - triangulación;
 - documentación del proyecto.
+
+---
+
+# Exclusiones documentadas
+
+Las exclusiones de entrevistas detectadas durante la revisión del corpus,
+junto con las fechas, evidencia disponible y el tratamiento de aportes
+históricos de exintegrantes, se documentan en:
+
+`02_Evidencias/exclusiones_corpus.md`
+
+Este registro conserva la trazabilidad histórica sin restaurar archivos
+retirados ni reescribir el historial Git.
