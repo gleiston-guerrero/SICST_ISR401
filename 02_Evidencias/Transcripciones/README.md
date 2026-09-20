@@ -24,7 +24,7 @@ De acuerdo con la composición actualmente documentada, el **corpus principal de
 
 La distribución es la siguiente:
 
-## Pacientes o expacientes de terapia física — 8
+## Pacientes o expacientes de terapia física — 9
 
 - EV2-PAC-01
 - EV2-PAC-03
@@ -34,6 +34,7 @@ La distribución es la siguiente:
 - EV2-PAC-07
 - EV2-PAC-08
 - EV2-PAC-09
+- FAM-04 *(código histórico conservado; perfil real: paciente/expaciente)*
 
 ## Estudiantes de fisioterapia — 3
 
@@ -41,12 +42,11 @@ La distribución es la siguiente:
 - EFT-02
 - EFT-03
 
-## Familiares o cuidadores — 4
+## Familiares o cuidadores — 3
 
 - FAM-01
 - FAM-02
 - FAM-03
-- FAM-04
 
 ## Profesional relacionado con fisioterapia — 1
 
@@ -55,7 +55,7 @@ La distribución es la siguiente:
 Total:
 
 ```text
-8 PAC + 3 EFT + 4 FAM + 1 FIS = 16 entrevistas
+9 participantes con perfil paciente/expaciente + 3 EFT + 3 FAM + 1 FIS = 16 entrevistas
 ```
 
 ---
@@ -107,6 +107,8 @@ Existen nombres históricos con variaciones de espacios, acentos o sufijos. Esos
 | FIS | Profesional relacionado con fisioterapia |
 | WALK-NTEC | Participante de sesión walkthrough no técnica |
 | WALK-TEC | Participante de sesión walkthrough técnica |
+
+> **Nota de trazabilidad:** `FAM-04` conserva su código histórico para no romper referencias previas, pero la revisión de la evidencia confirmó que su perfil real corresponde a paciente/expaciente y no a familiar/cuidador.
 
 ---
 
