@@ -87,8 +87,6 @@ El análisis estadístico incluye:
 - IC bootstrap del 95 % de Cohen's dz;
 - 10 000 remuestreos bootstrap con semilla base 42.
 
-## Evaluación original con origen no indicado en la hoja
-
 ## Relación de los evaluadores con el estudio y limitaciones de independencia
 
 La revisión posterior de la procedencia de los evaluadores originales permitió
@@ -122,6 +120,8 @@ Como acción correctiva, la repetición documentada en
 `06_Experimento/repeticion_A4/` utiliza tres evaluadores nuevos ajenos al corpus
 y al equipo, requisitos normalizados, orden aleatorio previamente definido y
 una rúbrica versionada antes de la recolección.
+
+## Evaluación original con origen no indicado en la hoja
 
 Los cuatro evaluadores recibieron una hoja de evaluación con 66 requisitos
 identificados únicamente mediante códigos `ITEM-xxx` y su descripción.
@@ -290,6 +290,7 @@ documento que haya quedado desfasado.
 
 No deben modificarse manualmente los CSV de resultados con el objetivo de
 forzar coincidencias entre documentos.
+
 ## Corrección prospectiva A4 y análisis A5
 
 Como acción correctiva posterior al experimento original, se realizó una nueva
@@ -305,6 +306,17 @@ Las tres evaluaciones reales completadas se conservan en:
 `06_Experimento/repeticion_A4/evaluaciones_completadas/`
 
 y corresponden a `EVAL-01`, `EVAL-02` y `EVAL-03`.
+
+Los tres evaluadores recibieron un archivo Excel de evaluación con los 66
+requisitos funcionales normalizados y presentados en el orden aleatorio
+previamente definido.
+
+Cada evaluador registró sus puntuaciones en las cinco dimensiones establecidas
+por la rúbrica dentro de su archivo Excel correspondiente.
+
+Los archivos Excel completados se conservaron como evidencia primaria de esta
+nueva repetición y no sustituyen ni modifican las cuatro evaluaciones del
+experimento original.
 
 Cada evaluador calificó los mismos 66 requisitos normalizados y aleatorizados
 en las cinco dimensiones de calidad establecidas.
