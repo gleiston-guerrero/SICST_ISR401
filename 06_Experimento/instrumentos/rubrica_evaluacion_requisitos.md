@@ -1,5 +1,12 @@
 # Rúbrica de Evaluación de Calidad de Requisitos Funcionales — SICST
 
+> **Nota de procedencia:** esta versión contiene correcciones retrospectivas
+> realizadas después de la evaluación original del 12/09/2026 para unificar
+> definiciones y documentar las limitaciones metodológicas detectadas durante
+> la revisión. No se presenta como una reconstrucción de una versión original
+> que no pueda verificarse. Si se recupera la versión auténtica utilizada el
+> 12/09/2026, deberá conservarse separadamente como evidencia histórica.
+
 ## Objetivo
 
 Evaluar comparativamente la calidad de los Requisitos Funcionales (RF)
@@ -37,8 +44,8 @@ entrevista de la que proviene, sin agregar ni distorsionar información?
 
 ### 5. Consistencia interna
 
-¿El requisito es coherente consigo mismo y no presenta contradicciones
-internas en su propia redacción?
+¿El requisito es coherente y no contradice otros requisitos funcionales
+o elementos relacionados del sistema?
 
 ---
 
@@ -53,12 +60,17 @@ datos_crudos/evaluaciones_ciegas/Evaluacion_<nombre>.xlsx
 Puntuando cada uno de los 66 ítems anonimizados de
 `datos_crudos/hoja_evaluacion_ciega.csv` en las 5 dimensiones anteriores.
 
-## Cegado
+## Ocultación de la etiqueta de origen
 
-Los evaluadores desconocen si cada ítem proviene del proceso humano o del
-LLM. El origen real solo se revela durante el análisis, mediante la clave
-privada de desciego almacenada de forma cifrada en
-`02_Evidencias/00_Restringido/`.
+La hoja utilizada en la evaluación original no mostraba explícitamente una
+columna que indicara si cada ítem provenía del proceso humano o del LLM.
+
+Esta ocultación de la etiqueta de origen no se presenta como evidencia de un
+cegamiento metodológico completo, debido a la relación previa de los
+evaluadores originales con participantes y actividades del estudio.
+
+Después de la evaluación, el origen de los ítems se reconstruye de forma
+determinista a partir de los archivos versionados del experimento.
 
 ## Evaluadores participantes
 
