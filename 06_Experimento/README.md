@@ -173,7 +173,9 @@ El archivo completo `requisitos_llm.csv` se utiliza porque la matriz temática
 documenta principalmente las correspondencias de comparación y puede omitir
 requisitos que no participan en un pareo.
 
-No se requiere una clave privada externa.
+La reconstrucción del origen se realiza de forma determinista con los
+archivos versionados del experimento y no depende de un artefacto externo
+de desciego.
 
 El script valida automáticamente que la reconstrucción produzca exactamente:
 
