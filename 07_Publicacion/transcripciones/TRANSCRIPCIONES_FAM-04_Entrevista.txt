@@ -1,143 +1,195 @@
 CÓDIGO HISTÓRICO: FAM-04
 PERFIL REAL: Paciente/expaciente
 TIPO: Entrevista
-FECHA: 17/09/2026
+ARCHIVO ORIGINAL: FAM-04_Entrevista.mp4
+DURACIÓN DEL VIDEO: 759.168 s (aprox. 12 min 39 s)
+FECHA DEL ARCHIVO: 17/09/2026
 
-NOTA DE PROCEDENCIA:
-Versión normalizada a partir de la transcripción automática disponible y del guion/cuestionario proporcionado para la sesión.
-Se corrigieron errores evidentes de reconocimiento automático y concordancia de género.
-Esta versión no debe describirse como “cotejada palabra por palabra contra el audio” si no se realizó esa escucha.
+NOTA DE PROCEDENCIA
+Esta versión se reconstruye de forma conservadora a partir de la transcripción automática histórica
+generada desde el mismo video original y de la guía visible durante la sesión. Se conserva el contenido
+de las respuestas y se corrigen únicamente errores evidentes de reconocimiento automático, puntuación
+y separación de turnos. No se añaden respuestas nuevas.
 
 ENTREVISTADOR:
-Hoy vamos a realizar las preguntas correspondientes al levantamiento de información del proyecto. Primero comenzamos con el consentimiento informado. El objetivo de este documento es proporcionar la información necesaria para que usted decida si desea participar o no en la investigación relacionada con el desarrollo de un sistema de control y seguimiento de terapia física, bajo la dirección del docente de la materia de Ingeniería de Requerimientos. Esta sesión va a ser grabada. Antes de comenzar necesito su autorización para grabar la sesión. ¿Me da autorización para poder grabar?
+Hoy les voy a hacer las preguntas correspondientes al levantamiento de información del proyecto.
+Primero comenzamos con el consentimiento informado. El objetivo de este documento es proporcionar
+la información necesaria para que usted decida si desea participar o no en la investigación relacionada
+con el desarrollo de un sistema de control y seguimiento de terapia física, bajo la dirección del docente
+de la materia de Ingeniería de Requerimientos. Esta sesión va a ser grabada. Antes de comenzar necesito
+su autorización para grabar la sesión. ¿Me da autorización para poder grabar?
 
 PARTICIPANTE:
 Sí, le doy mi autorización.
 
 ENTREVISTADOR:
-Pregunta 1. ¿Ha recibido terapia física o rehabilitación? ¿Por qué motivo general?
+Ahora vamos a comenzar con las preguntas.
+Pregunta 1. ¿Ha recibido terapia física o rehabilitación? ¿Por qué motivo?
 
 PARTICIPANTE:
-Sí. Recibí terapia después de una cirugía de reemplazo de rodilla causada por el desgaste de la articulación. Mi objetivo era volver a caminar con seguridad, subir escalones y realizar actividades de la casa sin depender siempre del bastón.
+Sí, recibí terapia después de una cirugía de reemplazo de rodilla causada por el desgaste de las
+articulaciones. Mi objetivo era volver a caminar con seguridad, subir escalones y realizar actividades
+en casa sin depender siempre del bastón.
 
 ENTREVISTADOR:
-Pregunta 2. Durante su terapia, ¿recibió ejercicios para realizar en casa?
+Pregunta 2. ¿Durante su terapia física recibió ejercicios para realizar en casa?
 
 PARTICIPANTE:
-Sí. Me enviaron ejercicios para doblar y estirar la rodilla, fortalecer el muslo y practicar la marcha. Algunos días debía hacerlos dos veces y otros tres, pero en casa no siempre recordaba el horario indicado.
+Claro, me enviaron ejercicios para doblar y estirar la rodilla, fortalecer el muslo y practicar la marcha.
+Algunos días debía hacerlos dos veces y otros tres, pero en casa no siempre recordaba el horario indicado.
 
 ENTREVISTADOR:
 Pregunta 3. ¿Qué indicaciones le daba el fisioterapeuta sobre los ejercicios?
 
 PARTICIPANTE:
-Me mostraba la posición correcta, las repeticiones, cuánto tiempo mantener cada movimiento y cuándo aplicar frío. También me entregó una hoja impresa, aunque varias instrucciones estaban escritas con letra pequeña y se me dificultaba revisarlas mientras hacía la rutina.
+Bueno, ella me mostraba la posición correcta, las repeticiones, cuánto tiempo tenía que mantener cada
+movimiento y cuándo aplicar frío. También me entregó una hoja impresa. Varias instrucciones estaban
+escritas con letra pequeña y se me dificultaba revisarla mientras hacía la rutina.
 
 ENTREVISTADOR:
 Pregunta 4. ¿Alguna vez olvidó cómo hacer un ejercicio, cuántas repeticiones hacer o cuándo realizarlo?
 
 PARTICIPANTE:
-Sí. Una vez confundí el ejercicio para ganar flexión con el de extensión y también olvidé si debía repetirlo por la mañana y por la tarde. Cuando cambiaron mi rutina continué dos días con la hoja anterior porque no entendí cuál era la vigente.
+Sí, la verdad es que una vez confundí el ejercicio para ganar flexión con el de extensión y también olvidé
+si debía repetirlo por la mañana y por la tarde. Cuando cambiaron mi rutina continué dos días con la hoja
+anterior porque no entendí cuál era la vigente.
 
 ENTREVISTADOR:
 Pregunta 5. ¿Qué dificultades tuvo al realizar ejercicios sin supervisión?
 
 PARTICIPANTE:
-Me daba temor perder el equilibrio al realizar ejercicios de pie. Además, por la tarde la rodilla se inflamaba más y no sabía si debía terminar la rutina, reducir las repeticiones o esperar hasta el día siguiente.
+¿Podría repetir la pregunta que hizo? No, sí escuché.
+Me daba temor perder el equilibrio al realizar ejercicios de pie. Además, por la tarde la rodilla se
+inflamaba más y no sabía si debía terminar la rutina, reducir las repeticiones o esperar hasta el día siguiente.
 
 ENTREVISTADOR:
 Pregunta 6. ¿Qué le ayudaba a recordar o cumplir sus ejercicios?
 
 PARTICIPANTE:
-Mi hermano me ayudaba a organizar los horarios y yo marcaba cada rutina en una hoja pegada en la refrigeradora. Sin embargo, si estaba solo o salía a una consulta, olvidaba registrar lo que ya había realizado.
+Mi hermano me ayudaba a organizar los horarios y yo marcaba cada rutina en una hoja pegada en la
+refrigeradora. Sin embargo, si estaba solo o salía a una consulta, olvidaba registrar lo que ya había realizado.
 
 ENTREVISTADOR:
 Pregunta 7. ¿Qué información le hubiera gustado tener más clara durante su tratamiento?
 
 PARTICIPANTE:
-Me habría gustado saber qué nivel de dolor era esperado, cuándo la inflamación requería avisar al fisioterapeuta y qué metas debía alcanzar cada semana. También necesitaba indicaciones más claras para dejar progresivamente el bastón.
+Me hubiera gustado saber qué nivel de dolor era esperado, cuándo la inflamación requería avisar al
+fisioterapeuta y qué metas debía alcanzar cada semana. También necesitaba indicaciones más claras para
+dejar progresivamente el bastón.
 
 ENTREVISTADOR:
-Pregunta 8. ¿Le resultaba fácil saber si estaba avanzando en su recuperación?
+Pregunta 8. ¿Le resultaba fácil saber si avanzaba en su recuperación?
 
 PARTICIPANTE:
-No siempre. Había días en que caminaba mejor y otros en que me sentía más rígido, por lo que pensaba que estaba retrocediendo. Habría sido útil comparar la flexión de la rodilla, el dolor y la distancia caminada durante varias semanas.
+No, la verdad es que no. Había días que caminaba mejor y otros que me sentía más rígido, por lo que
+pensaba que estaba retrocediendo. Habría sido muy útil comparar la flexión de la rodilla, el dolor y la
+distancia caminada durante las semanas.
 
 ENTREVISTADOR:
-Pregunta 9. ¿Qué información considera importante registrar después de realizar una rutina, por ejemplo, dolor, cansancio o dificultad?
+Pregunta 9. ¿Qué información considera importante registrar después de realizar una rutina, por ejemplo,
+dolor, cansancio o dificultad?
 
 PARTICIPANTE:
-Registraría el dolor antes y después de la rutina, la inflamación, cuánto pude doblar la rodilla, si utilicé bastón, los ejercicios completados y cualquier pérdida de equilibrio. También anotaría si tomé un analgésico antes de hacerlos.
+Diría que registraría el dolor antes y después de la rutina. También la inflamación, cuánto pude doblar la
+rodilla, si utilicé el bastón o no, los ejercicios completados y cualquier pérdida de equilibrio. También
+anotaría si tomé un analgésico antes de hacerlo.
 
 ENTREVISTADOR:
-Pregunta 10. ¿Qué le preocuparía sobre el uso de imágenes, cámara o datos personales durante un seguimiento terapéutico?
+Pregunta 10. ¿Qué le preocuparía sobre el uso de imágenes, cámara o datos personales durante un
+seguimiento terapéutico?
 
 PARTICIPANTE:
-Me preocuparía que la cámara muestre el interior de mi casa o grabe a otras personas que pasan por el lugar. Quisiera poder elegir cuándo se activa, ver una señal clara mientras funciona y confirmar que el video no quede guardado sin mi permiso.
+Siendo sincero, me preocuparía que la cámara muestre el interior de mi casa o grabe a otras personas que
+pasan por el lugar. Quisiera poder elegir cuándo se activa, ver una señal clara mientras está activada y
+confirmar que el video no quede guardado sin permiso.
 
 ENTREVISTADOR:
 Pregunta 11. ¿Qué información sobre su tratamiento considera privada?
 
 PARTICIPANTE:
-Considero privados el diagnóstico, la fecha de la cirugía, los medicamentos, los videos de mi movimiento y las observaciones sobre mi capacidad para caminar. No quisiera que esa información la vea cualquier familiar o persona que use mi teléfono.
+Considero privados el diagnóstico, la fecha de la cirugía, los medicamentos, también los videos de
+movimiento y las observaciones sobre mi capacidad para caminar. No me gustaría que esa información
+la vea cualquier familiar o persona que use mi teléfono.
 
 ENTREVISTADOR:
-Pregunta 12. ¿Quién debería poder ver información sobre su avance: solo usted, el fisioterapeuta o algún familiar autorizado?
+Pregunta 12. ¿Quién debería poder ver información sobre su avance: usted, el fisioterapeuta o algún
+familiar autorizado?
 
 PARTICIPANTE:
-Yo y el fisioterapeuta deberíamos ver toda la información. Mi hermano podría recibir recordatorios y conocer si cumplí la rutina, pero no debería ver el diagnóstico completo ni los videos, a menos que yo lo autorice.
+Diría que yo y el fisioterapeuta deberíamos ver toda la información. Mi hermano podría recibir recordatorios
+y conocer si cumplí la rutina, pero no debería ver el diagnóstico completo ni los videos a menos que yo
+lo autorice.
 
 ENTREVISTADOR:
-Pregunta 13. ¿Qué problema considera más común cuando una persona hace terapia desde casa?
+Pregunta 13. ¿Qué problema considera más común cuando una persona hace terapia física desde casa?
 
 PARTICIPANTE:
-Creo que lo más común es suspender los ejercicios por miedo al dolor o realizarlos con una postura incorrecta cuando no hay nadie cerca. En personas mayores también puede existir riesgo de caída si el ejercicio requiere estar de pie.
+Creo que lo más común es suspender los ejercicios por miedo al dolor o realizarlos con una postura
+incorrecta cuando no hay nadie cerca. En personas mayores también puede existir riesgo de caída si el
+ejercicio requiere estar de pie.
 
 ENTREVISTADOR:
-Pregunta 14. ¿Qué tipo de apoyo considera útil para cumplir mejor una rutina de ejercicios?
+Pregunta 14. ¿Qué tipo de apoyo considera útil para poder cumplir mejor una rutina de ejercicios?
 
 PARTICIPANTE:
-Me servirían instrucciones por voz, letras grandes, una imagen por cada paso y un botón para avisar que siento dolor o inseguridad. También sería útil que un familiar autorizado reciba una alerta únicamente cuando yo no complete varias sesiones.
+Yo creo que me servirían las instrucciones por voz, las letras grandes, una imagen por cada paso y un
+botón para avisar que siento dolor o inseguridad. También sería útil que un familiar autorizado, por ejemplo
+mi hermana, reciba una alerta únicamente cuando yo no complete varias sesiones.
 
 ENTREVISTADOR:
-Pregunta 15. ¿Qué recomendaría mejorar en el seguimiento de pacientes durante terapia física?
+Pregunta 15. ¿Qué recomendaría para mejorar el seguimiento de pacientes durante la terapia física?
 
 PARTICIPANTE:
-Recomendaría que el plan diario sea sencillo, muestre con claridad qué cambió y permita informar dolor o inflamación sin esperar a la próxima cita. El fisioterapeuta debería responder o ajustar la rutina cuando considere necesario.
+Yo realmente recomendaría que el plan diario sea sencillo, muestre con claridad qué cambió y permita
+informar dolor o inflamación sin esperar a la próxima cita. El fisioterapeuta también debería responder
+o ajustar la rutina cuando lo considere necesario.
 
 ENTREVISTADOR:
 Vamos con unas preguntas adicionales.
-
-Pregunta 16. Usted mencionó que el sistema debería ser fácil de usar. ¿Qué tareas debería poder completar sin ayuda y en cuántos pasos como máximo?
+Pregunta 16. Usted menciona que el sistema debería ser fácil de usar. ¿Qué tareas debería poder completar
+sin ayuda y en cuántos pasos como máximo?
 
 PARTICIPANTE:
-Debería poder abrir la rutina del día e iniciarla con un botón grande, en un máximo de dos acciones. También necesitaría letras legibles y una opción para escuchar las instrucciones sin tener que leer toda la pantalla.
+Debería poder abrir la rutina del día e iniciarla con un botón grande, en un máximo de dos acciones.
+También necesitaría letra legible y una opción para escuchar las instrucciones sin tener que leer toda
+la pantalla.
 
 ENTREVISTADOR:
-Pregunta 17. Cuando habla de recibir recordatorios a tiempo, ¿con cuánta anticipación y por qué medio le servirían?
+Pregunta 17. Cuando habla de recibir recordatorios a tiempo, ¿con cuánta anticipación y por qué medio
+le servirían?
 
 PARTICIPANTE:
-Preferiría un aviso treinta minutos antes y otro solo si no he iniciado la sesión. Me serviría una notificación con sonido o vibración en el teléfono y la posibilidad de avisar a mi hermana si yo acepto esa ayuda.
+Yo prefiero un aviso treinta minutos antes y otro solo si no he iniciado la sesión. Me serviría una
+notificación con sonido o vibración en el teléfono y la posibilidad de avisar a mi hermana si yo acepto
+esa ayuda.
 
 ENTREVISTADOR:
 Pregunta 18. Si la información debe mostrarse clara, ¿qué elementos visuales o explicaciones necesitaría?
 
 PARTICIPANTE:
-Necesitaría fotografías grandes, una instrucción por pantalla, demostraciones lentas y mensajes que diferencien el dolor esperado de una señal de alerta. Los botones principales deberían tener texto, no solamente símbolos.
+Necesitaría fotografías grandes, una instrucción por pantalla, demostraciones lentas y mensajes que
+diferencien el dolor esperado de una señal de alerta. También los botones principales deberían tener
+texto, no solamente símbolos.
 
 ENTREVISTADOR:
-Pregunta 19. Cuando solicita que sus datos estén seguros, ¿quién no debería tener acceso y cómo autorizaría a otra persona?
+Pregunta 19. Cuando solicita que sus datos estén seguros, ¿quién no debería tener acceso y cómo
+autorizaría a otra persona?
 
 PARTICIPANTE:
-No deberían entrar vecinos, familiares no autorizados ni otras personas que utilicen mi teléfono. Autorizaría a mi hermana mediante un código temporal y debería existir una opción sencilla para retirar ese permiso.
+No deberían entrar vecinos, familiares no autorizados ni otras personas que utilicen mi teléfono.
+Autorizaría a mi hermana mediante un código temporal y debería existir una opción sencilla para retirar
+ese permiso.
 
 ENTREVISTADOR:
-Pregunta 20. Si el seguimiento debe ser completo, ¿qué información no debería faltar en el registro?
+Pregunta 20, la última. Si el seguimiento debe ser completo, ¿qué información no debería faltar en el registro?
 
 PARTICIPANTE:
-No deberían faltar el dolor antes y después, la inflamación, la movilidad, el uso de bastón, los ejercicios completados, los horarios y cualquier caída o pérdida de equilibrio. También debería quedar registrado qué profesional modificó la rutina.
+Yo creo que no deberían faltar el dolor de antes y después, la inflamación, la movilidad, el uso del bastón,
+los ejercicios completados, los horarios y cualquier caída o pérdida de equilibrio. También debería quedar
+registrado qué profesional modificó la rutina.
 
 ENTREVISTADOR:
-Eso es todo por el momento. Le agradezco mucho por esta entrevista y por compartir su punto de vista y su opinión.
+Eso es todo por el momento. Le agradezco mucho por esta entrevista y por darnos su punto de vista y su opinión.
 
 PARTICIPANTE:
 Yo también le agradezco por escucharme.
