@@ -11,6 +11,16 @@ generada desde el mismo video original y de la guía visible durante la sesión.
 de las respuestas y se corrigen únicamente errores evidentes de reconocimiento automático, puntuación
 y separación de turnos. No se añaden respuestas nuevas.
 
+NOTA DE VERIFICACIÓN POSTERIOR
+Durante la revisión posterior del material se registró que las referencias al familiar corresponden al
+hermano del participante. El documento preparatorio utilizado como apoyo contenía referencias a “hija”
+que no corresponden al participante y se consideran parte del material preparatorio, no de la evidencia
+final de la sesión.
+
+La entrevista real finalizó después de la pregunta 20. La pregunta 21 existente en el guion preparatorio
+no fue aplicada durante la sesión, debido a que se decidió cerrar la entrevista en ese punto para no
+extender innecesariamente su duración.
+
 ENTREVISTADOR:
 Hoy les voy a hacer las preguntas correspondientes al levantamiento de información del proyecto.
 Primero comenzamos con el consentimiento informado. El objetivo de este documento es proporcionar
@@ -134,7 +144,7 @@ Pregunta 14. ¿Qué tipo de apoyo considera útil para poder cumplir mejor una r
 PARTICIPANTE:
 Yo creo que me servirían las instrucciones por voz, las letras grandes, una imagen por cada paso y un
 botón para avisar que siento dolor o inseguridad. También sería útil que un familiar autorizado, por ejemplo
-mi hermana, reciba una alerta únicamente cuando yo no complete varias sesiones.
+mi hermano, reciba una alerta únicamente cuando yo no complete varias sesiones.
 
 ENTREVISTADOR:
 Pregunta 15. ¿Qué recomendaría para mejorar el seguimiento de pacientes durante la terapia física?
@@ -160,7 +170,7 @@ le servirían?
 
 PARTICIPANTE:
 Yo prefiero un aviso treinta minutos antes y otro solo si no he iniciado la sesión. Me serviría una
-notificación con sonido o vibración en el teléfono y la posibilidad de avisar a mi hermana si yo acepto
+notificación con sonido o vibración en el teléfono y la posibilidad de avisar a mi hermano si yo acepto
 esa ayuda.
 
 ENTREVISTADOR:
@@ -177,7 +187,7 @@ autorizaría a otra persona?
 
 PARTICIPANTE:
 No deberían entrar vecinos, familiares no autorizados ni otras personas que utilicen mi teléfono.
-Autorizaría a mi hermana mediante un código temporal y debería existir una opción sencilla para retirar
+Autorizaría a mi hermano mediante un código temporal y debería existir una opción sencilla para retirar
 ese permiso.
 
 ENTREVISTADOR:
