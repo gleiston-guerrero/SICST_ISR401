@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-D5 — Verificador conservador de rutas/enlaces locales del repositorio SICST.
+D5 — Verificador conservador de rutas/enlaces locales del repositorio SICST (V3).
 
 Objetivo:
 - comprobar enlaces Markdown/HTML y referencias LaTeX;
@@ -219,7 +219,7 @@ def check_one(root: Path, source: Path, target: str, kind: str):
     }
 
 
-def extract_refs(text: str, root_names: set[str]):
+def extract_refs(text: str, root_names: set[str], source_suffix: str):
     refs = []
 
     for m in MD_LINK_RE.finditer(text):
@@ -231,8 +231,12 @@ def extract_refs(text: str, root_names: set[str]):
     for m in HTML_LINK_RE.finditer(text):
         refs.append(("html", m.group(1)))
 
-    for m in CSS_URL_RE.finditer(text):
-        refs.append(("css", m.group(1)))
+    # Solo interpretar url(...) como referencia CSS dentro de archivos .css.
+    # En JavaScript existen expresiones como createObjectURL(blob) y
+    # revokeObjectURL(url), que no son enlaces a archivos locales.
+    if source_suffix.lower() == ".css":
+        for m in CSS_URL_RE.finditer(text):
+            refs.append(("css", m.group(1)))
 
     for m in LATEX_RE.finditer(text):
         refs.append(("latex", m.group(1)))
@@ -278,7 +282,7 @@ def main() -> int:
         scanned_files += 1
         seen_in_file = set()
 
-        for kind, target in extract_refs(text, root_names):
+        for kind, target in extract_refs(text, root_names, path.suffix):
             key = (kind, target)
             if key in seen_in_file:
                 continue
@@ -367,7 +371,7 @@ def main() -> int:
         )
 
     print("=" * 72)
-    print("D5 — VERIFICACIÓN CONSERVADORA DE RUTAS/ENLACES")
+    print("D5 — VERIFICACIÓN CONSERVADORA DE RUTAS/ENLACES — V3")
     print("=" * 72)
     print(f"Raíz: {root}")
     print(f"Archivos revisados: {scanned_files}")
