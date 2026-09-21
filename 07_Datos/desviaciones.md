@@ -59,6 +59,54 @@ Resultados principales:
 
 Por tanto, la exclusión de la ráfaga produce cambios pequeños en las medias generales, pero sí modifica de forma visible la distribución interna de las categorías de aceptación de cámara. Los resultados del cuestionario deben interpretarse teniendo presente esta sensibilidad.
 
-## H2
+## H2 — Recodificación y normalización de códigos
 
-Pendiente documentar aquí la tabla antes/después de recodificación de códigos, conforme al plan de mejora.
+### Comparación con la versión del 02/08/2026
+
+El commit histórico `2d685cd9bb624c39c5300fcfdb94dbbc52cfb50e` contenía tres códigos que posteriormente fueron corregidos. La comparación se realizó contra la exportación original actual de Google Forms, preservada en `02_Evidencias/Respuestas/exportacion_original_google_forms.xlsx`.
+
+La versión histórica anonimizada no conservaba la columna `Timestamp`; por ello, la correspondencia de los registros se verificó mediante el perfil y el contenido de las respuestas.
+
+| Registro | Código en versión 02/08 | Código en exportación original actual | Explicación |
+|---|---|---|---|
+| Fisioterapeuta, respuesta del 29/07/2026 01:20:12 | `EV2-ENT-01` | `EV2-ENT-02` | La versión del 02/08 repetía `EV2-ENT-01` para dos fisioterapeutas. La exportación original actual distingue al segundo registro como `EV2-ENT-02`. |
+| Fisioterapeuta, respuesta del 01/08/2026 12:40:28 | `EV2-PAC-11` | `EV2-ENT-03` | El código histórico utilizaba el prefijo de paciente para un registro cuyo perfil es fisioterapeuta. La exportación original actual lo identifica como `EV2-ENT-03`. |
+| Paciente/expaciente, respuesta del 01/08/2026 14:16:06 | `EV2-ENT-02` | `EV2-PAC-02 ` | El código histórico utilizaba el prefijo de entrevistador/fisioterapeuta para un registro cuyo perfil es paciente/expaciente. La exportación original conserva `EV2-PAC-02 ` con un espacio final; el paso de limpieza lo normaliza a `EV2-PAC-02`. |
+
+Estas tres recodificaciones se documentan como cambios de identificador. No modifican las respuestas asociadas a cada registro.
+
+### Ausencia de `PAC-09` y `PAC-11` en el cuestionario
+
+Después de normalizar los 79 códigos de la exportación original, la secuencia de códigos de paciente contiene `EV2-PAC-01` a `EV2-PAC-78`, con dos ausencias: `EV2-PAC-09` y `EV2-PAC-11`.
+
+- `EV2-PAC-09` no aparece como código de respuesta en la exportación original de Google Forms. Por tanto, su ausencia en el conjunto del cuestionario no fue causada por el paso de limpieza ni por una eliminación posterior.
+- `EV2-PAC-11` tampoco aparece como respuesta del cuestionario en la exportación original actual. La versión del 02/08 utilizó históricamente `EV2-PAC-11` para un registro de perfil fisioterapeuta; ese registro corresponde actualmente a `EV2-ENT-03`.
+- La existencia de códigos similares en entrevistas, walkthrough u otras evidencias del proyecto no se utiliza para crear retrospectivamente respuestas del cuestionario que no estén presentes en la exportación original.
+
+No se rellenan los números ausentes ni se crean participantes para completar la secuencia.
+
+### Respuestas idénticas de `EV2-PAC-10` y `EVA2-PAC-12`
+
+La exportación original contiene dos registros con contenido de respuesta idéntico en todas las preguntas del cuestionario:
+
+- `EV2-PAC-10`: 01/08/2026 11:28:04.
+- `EVA2-PAC-12`: 01/08/2026 12:23:26.
+
+Los registros difieren en la marca temporal y en el código, pero las respuestas del cuestionario coinciden. La exportación por sí sola no permite determinar si se trata de respuestas independientes coincidentes, copia o duplicación. Por integridad, ambos registros se conservan y la coincidencia se documenta sin atribuir una causa no demostrada.
+
+En los datos procesados el código `EVA2-PAC-12` se normaliza únicamente en su identificador a `EV2-PAC-12`; sus respuestas no se alteran.
+
+### Normalización aplicada en el paso de limpieza
+
+El archivo `07_Datos/scripts/02_limpiar_datos.py` realiza la normalización sobre los datos derivados y conserva intactos los datos crudos.
+
+Se aplican estas reglas:
+
+| Valor en exportación/dato crudo | Valor procesado |
+|---|---|
+| `EV2-PAC-02 ` | `EV2-PAC-02` |
+| ` EV2-PAC-41` | `EV2-PAC-41` |
+| ` EV2-PAC-42` | `EV2-PAC-42` |
+| `EVA2-PAC-12` | `EV2-PAC-12` |
+
+El script valida además que todos los códigos procesados cumplan el patrón `EV2-PAC-##` o `EV2-ENT-##`. La versión procesada resultante conserva **79 filas**, no contiene códigos con espacios iniciales/finales y no contiene prefijos mezclados `EVA2`.
