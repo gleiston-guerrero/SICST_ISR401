@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 """
-D5 — Verificador de rutas/enlaces locales del repositorio SICST.
+D5 — Verificador conservador de rutas/enlaces locales del repositorio SICST.
+
+Objetivo:
+- comprobar enlaces Markdown/HTML y referencias LaTeX;
+- comprobar rutas inequívocas escritas entre backticks;
+- NO confundir DOI, versiones, nombres sueltos de archivos ni ejemplos con rutas reales.
 
 Uso desde la raíz del repositorio:
-    python 07_Datos/scripts/verificar_rutas_enlaces.py
+    python3 07_Datos/scripts/verificar_rutas_enlaces.py
 
 Genera:
     07_Datos/resultados/verificacion_rutas_enlaces.csv
     07_Datos/resultados/verificacion_rutas_enlaces.md
 
 Código de salida:
-    0 = no se detectaron referencias locales faltantes
-    1 = se detectaron referencias locales faltantes
+    0 = 0 referencias locales faltantes dentro del alcance del verificador
+    1 = existen referencias locales faltantes confirmadas
 """
 
 from __future__ import annotations
@@ -34,14 +39,8 @@ SKIP_DIRS = {
     ".venv", "venv", "dist", "build"
 }
 
-IGNORE_PREFIXES = (
-    "http://", "https://", "mailto:", "tel:", "data:", "javascript:",
-    "#", "//"
-)
-
-PLACEHOLDER_HINTS = (
-    "<", ">", "{", "}", "*", "$(", "${", "PENDIENTE", "EJEMPLO",
-    "ruta/", "path/", "archivo.ext", "example/"
+EXTERNAL_PREFIXES = (
+    "http://", "https://", "mailto:", "tel:", "data:", "javascript:", "#", "//"
 )
 
 COMMON_FILE_EXTENSIONS = {
@@ -51,12 +50,22 @@ COMMON_FILE_EXTENSIONS = {
     ".css", ".js", ".drawio", ".sha256"
 }
 
+DOI_RE = re.compile(r"^10\.\d{4,9}/\S+$", re.I)
+VERSION_RE = re.compile(r"^v?\d+(?:\.\d+){1,3}(?:[-_][A-Za-z0-9.-]+)?$", re.I)
+COMMAND_RE = re.compile(
+    r"^(?:git|python3?|py|pip3?|npm|npx|pdflatex|xelatex|ffprobe|ffmpeg|sha256sum)\s+",
+    re.I,
+)
+
 MD_LINK_RE = re.compile(r'!?\[[^\]]*\]\(([^)]+)\)')
+MD_REF_RE = re.compile(r'^\s*\[[^\]]+\]:\s*(\S+)', re.M)
 HTML_LINK_RE = re.compile(r'(?:href|src)\s*=\s*["\']([^"\']+)["\']', re.I)
+CSS_URL_RE = re.compile(r'url\(\s*["\']?([^)"\']+)["\']?\s*\)', re.I)
 LATEX_RE = re.compile(
     r'\\(?:includegraphics(?:\[[^\]]*\])?|input|include|bibliography|addbibresource)\{([^}]+)\}'
 )
 BACKTICK_RE = re.compile(r'`([^`\n]+)`')
+
 
 def repo_root_from_script() -> Path:
     here = Path(__file__).resolve()
@@ -64,47 +73,80 @@ def repo_root_from_script() -> Path:
     if (candidate / ".git").exists() or (candidate / "07_Datos").exists():
         return candidate
     cwd = Path.cwd().resolve()
-    if (cwd / "07_Datos").exists():
+    if (cwd / ".git").exists() or (cwd / "07_Datos").exists():
         return cwd
     return candidate
 
+
 def clean_target(raw: str) -> str:
     s = html.unescape(raw.strip())
-    if " " in s and not s.startswith("<"):
-        s = re.sub(r'\s+["\'][^"\']*["\']\s*$', "", s)
+    # Quitar título Markdown opcional al final: archivo "título"
+    s = re.sub(r'\s+["\'][^"\']*["\']\s*$', "", s)
     s = s.strip("<>").strip()
     s = unquote(s)
     s = s.split("#", 1)[0].split("?", 1)[0].strip()
     return s
 
-def looks_local_path(value: str) -> bool:
-    if not value:
-        return False
-    low = value.lower()
-    if low.startswith(IGNORE_PREFIXES):
-        return False
-    if value.startswith("\\\\"):
-        return False
-    if re.match(r"^[A-Za-z]:[\\/]", value):
-        return False
-    if any(h in value for h in PLACEHOLDER_HINTS):
-        return False
-    if "\n" in value or len(value) > 260:
-        return False
-    if value.startswith(("git ", "python ", "py ", "pip ", "npm ", "npx ",
-                         "pdflatex ", "ffprobe ", "ffmpeg ")):
-        return False
 
-    suffix = Path(value).suffix.lower()
-    if "/" in value or "\\" in value:
+def top_level_names(root: Path) -> set[str]:
+    names = set()
+    for p in root.iterdir():
+        if p.name == ".git":
+            continue
+        names.add(p.name)
+    return names
+
+
+def is_external_or_nonpath(value: str) -> bool:
+    if not value:
         return True
-    if suffix in COMMON_FILE_EXTENSIONS:
+    low = value.lower()
+    if low.startswith(EXTERNAL_PREFIXES):
+        return True
+    if DOI_RE.match(value):
+        return True
+    if VERSION_RE.match(value):
+        return True
+    if COMMAND_RE.match(value):
+        return True
+    if value.startswith("\\\\"):
+        return True
+    if re.match(r"^[A-Za-z]:[\\/]", value):
+        return True
+    if any(token in value for token in ("<", ">", "${", "$(", "{usuario}", "{archivo}")):
+        return True
+    if "*" in value:
+        return True
+    if "\n" in value or len(value) > 300:
         return True
     return False
 
+
+def is_strict_backtick_path(value: str, root_names: set[str]) -> bool:
+    """
+    Solo considera ruta una mención entre backticks cuando es inequívoca.
+    Se ignoran nombres sueltos como `index.html`, `diccionario_datos.csv`
+    o `resultados/` porque pueden ser menciones contextuales y no enlaces.
+    """
+    if is_external_or_nonpath(value):
+        return False
+
+    v = value.replace("\\", "/").strip()
+    if v.startswith("./") or v.startswith("../"):
+        return True
+
+    # Ruta explícita que comienza por un elemento real del nivel raíz.
+    if "/" in v:
+        first = v.split("/", 1)[0]
+        if first in root_names:
+            return True
+
+    return False
+
+
 def candidate_paths(root: Path, source: Path, raw_target: str, kind: str):
     t = clean_target(raw_target)
-    if not looks_local_path(t):
+    if is_external_or_nonpath(t):
         return t, []
 
     t = t.replace("\\", "/")
@@ -119,6 +161,8 @@ def candidate_paths(root: Path, source: Path, raw_target: str, kind: str):
     if kind == "latex":
         p = Path(t)
         if not p.suffix:
+            # \bibliography{referencias} normalmente implica .bib;
+            # input/include normalmente .tex; includegraphics varias extensiones.
             for ext in (".tex", ".bib", ".png", ".jpg", ".jpeg", ".pdf", ".svg"):
                 candidates.append((source.parent / (t + ext)).resolve())
                 candidates.append((root / (t.lstrip("/") + ext)).resolve())
@@ -132,6 +176,7 @@ def candidate_paths(root: Path, source: Path, raw_target: str, kind: str):
             unique.append(c)
     return t, unique
 
+
 def is_within_repo(root: Path, p: Path) -> bool:
     try:
         p.relative_to(root)
@@ -139,29 +184,30 @@ def is_within_repo(root: Path, p: Path) -> bool:
     except ValueError:
         return False
 
+
 def check_one(root: Path, source: Path, target: str, kind: str):
     cleaned, candidates = candidate_paths(root, source, target, kind)
     if not candidates:
         return None
 
-    valid_candidates = [p for p in candidates if is_within_repo(root, p)]
-    if not valid_candidates:
+    valid = [p for p in candidates if is_within_repo(root, p)]
+    if not valid:
         return {
             "archivo_origen": source.relative_to(root).as_posix(),
             "tipo": kind,
             "referencia": cleaned,
             "estado": "FUERA_REPO",
-            "resuelto_como": ""
+            "resuelto_como": "",
         }
 
-    for p in valid_candidates:
+    for p in valid:
         if p.exists():
             return {
                 "archivo_origen": source.relative_to(root).as_posix(),
                 "tipo": kind,
                 "referencia": cleaned,
                 "estado": "OK",
-                "resuelto_como": p.relative_to(root).as_posix()
+                "resuelto_como": p.relative_to(root).as_posix(),
             }
 
     return {
@@ -169,23 +215,40 @@ def check_one(root: Path, source: Path, target: str, kind: str):
         "tipo": kind,
         "referencia": cleaned,
         "estado": "FALTANTE",
-        "resuelto_como": ""
+        "resuelto_como": "",
     }
 
-def extract_refs(text: str):
+
+def extract_refs(text: str, root_names: set[str]):
     refs = []
+
     for m in MD_LINK_RE.finditer(text):
         refs.append(("markdown", m.group(1)))
+
+    for m in MD_REF_RE.finditer(text):
+        refs.append(("markdown_ref", m.group(1)))
+
     for m in HTML_LINK_RE.finditer(text):
         refs.append(("html", m.group(1)))
+
+    for m in CSS_URL_RE.finditer(text):
+        refs.append(("css", m.group(1)))
+
     for m in LATEX_RE.finditer(text):
         refs.append(("latex", m.group(1)))
+
     for m in BACKTICK_RE.finditer(text):
-        refs.append(("backtick", m.group(1)))
+        value = clean_target(m.group(1))
+        if is_strict_backtick_path(value, root_names):
+            refs.append(("backtick_ruta", value))
+
     return refs
+
 
 def main() -> int:
     root = repo_root_from_script()
+    root_names = top_level_names(root)
+
     results_dir = root / "07_Datos" / "resultados"
     results_dir.mkdir(parents=True, exist_ok=True)
 
@@ -195,6 +258,7 @@ def main() -> int:
     for path in root.rglob("*"):
         if not path.is_file():
             continue
+
         rel_parts = path.relative_to(root).parts
         if any(part in SKIP_DIRS for part in rel_parts):
             continue
@@ -213,22 +277,31 @@ def main() -> int:
 
         scanned_files += 1
         seen_in_file = set()
-        for kind, target in extract_refs(text):
+
+        for kind, target in extract_refs(text, root_names):
             key = (kind, target)
             if key in seen_in_file:
                 continue
             seen_in_file.add(key)
+
             result = check_one(root, path, target, kind)
             if result:
                 rows.append(result)
 
+    # Deduplicación final.
     dedup = []
     seen = set()
-    for r in rows:
-        key = (r["archivo_origen"], r["tipo"], r["referencia"], r["estado"])
+    for row in rows:
+        key = (
+            row["archivo_origen"],
+            row["tipo"],
+            row["referencia"],
+            row["estado"],
+            row["resuelto_como"],
+        )
         if key not in seen:
             seen.add(key)
-            dedup.append(r)
+            dedup.append(row)
     rows = dedup
 
     missing = [r for r in rows if r["estado"] in {"FALTANTE", "FUERA_REPO"}]
@@ -238,7 +311,13 @@ def main() -> int:
     with csv_path.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(
             f,
-            fieldnames=["archivo_origen", "tipo", "referencia", "estado", "resuelto_como"]
+            fieldnames=[
+                "archivo_origen",
+                "tipo",
+                "referencia",
+                "estado",
+                "resuelto_como",
+            ],
         )
         writer.writeheader()
         writer.writerows(rows)
@@ -247,7 +326,7 @@ def main() -> int:
     with md_path.open("w", encoding="utf-8", newline="\n") as f:
         f.write("# Verificación de rutas y enlaces locales — D5\n\n")
         f.write(f"- Archivos de texto revisados: **{scanned_files}**\n")
-        f.write(f"- Referencias locales detectadas: **{len(rows)}**\n")
+        f.write(f"- Referencias locales inequívocas detectadas: **{len(rows)}**\n")
         f.write(f"- Referencias válidas: **{len(ok)}**\n")
         f.write(f"- Referencias faltantes / fuera del repositorio: **{len(missing)}**\n\n")
 
@@ -258,27 +337,41 @@ def main() -> int:
             for r in missing:
                 src = r["archivo_origen"].replace("|", "\\|")
                 ref = r["referencia"].replace("|", "\\|")
-                f.write(f"| `{src}` | {r['tipo']} | `{ref}` | **{r['estado']}** |\n")
-            f.write("\n> D5 no puede cerrarse todavía. Deben corregirse estas referencias y volver a ejecutar el verificador.\n")
+                f.write(
+                    f"| `{src}` | {r['tipo']} | `{ref}` | **{r['estado']}** |\n"
+                )
+            f.write(
+                "\n> D5 no se cierra todavía. Deben revisarse estas referencias "
+                "y volver a ejecutar el verificador.\n"
+            )
         else:
             f.write("## Resultado\n\n")
-            f.write("**0 referencias locales faltantes detectadas por el verificador.**\n\n")
-            f.write("D5 puede documentarse como verificado para el alcance de este script.\n")
+            f.write(
+                "**0 referencias locales faltantes detectadas dentro del alcance "
+                "del verificador.**\n\n"
+            )
 
-        f.write("\n## Alcance\n\n")
+        f.write("\n## Alcance del verificador\n\n")
         f.write(
-            "El verificador revisa enlaces Markdown, atributos `href/src` de HTML, "
-            "referencias LaTeX (`includegraphics`, `input`, `include`, `bibliography`, "
-            "`addbibresource`) y rutas locales escritas entre backticks. "
-            "Ignora URLs externas, anclas, comandos y marcadores evidentes.\n"
+            "Se comprueban enlaces Markdown, referencias Markdown, atributos "
+            "`href/src` de HTML, `url()` de CSS, referencias LaTeX "
+            "(`includegraphics`, `input`, `include`, `bibliography`, "
+            "`addbibresource`) y rutas inequívocas entre backticks que comienzan "
+            "por una carpeta/archivo real del nivel raíz o por `./`/`../`.\n\n"
+        )
+        f.write(
+            "No se contabilizan como rutas los DOI, URLs externas, versiones, "
+            "comandos, comodines ni nombres sueltos como `index.html` o "
+            "`diccionario_datos.csv`, porque pueden ser menciones contextuales "
+            "y no enlaces navegables.\n"
         )
 
     print("=" * 72)
-    print("D5 — VERIFICACIÓN DE RUTAS/ENLACES")
+    print("D5 — VERIFICACIÓN CONSERVADORA DE RUTAS/ENLACES")
     print("=" * 72)
     print(f"Raíz: {root}")
     print(f"Archivos revisados: {scanned_files}")
-    print(f"Referencias locales: {len(rows)}")
+    print(f"Referencias inequívocas: {len(rows)}")
     print(f"OK: {len(ok)}")
     print(f"FALTANTES/FUERA_REPO: {len(missing)}")
     print(f"CSV: {csv_path.relative_to(root)}")
@@ -286,12 +379,16 @@ def main() -> int:
 
     if missing:
         print("\nPRIMERAS REFERENCIAS PENDIENTES:")
-        for r in missing[:20]:
-            print(f"- {r['archivo_origen']} -> {r['referencia']} [{r['estado']}]")
+        for r in missing[:30]:
+            print(
+                f"- {r['archivo_origen']} -> {r['referencia']} "
+                f"[{r['estado']}] ({r['tipo']})"
+            )
         return 1
 
-    print("\nRESULTADO: 0 referencias faltantes.")
+    print("\nRESULTADO: 0 referencias faltantes dentro del alcance definido.")
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())
