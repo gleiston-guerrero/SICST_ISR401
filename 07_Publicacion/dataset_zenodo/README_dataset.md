@@ -2,10 +2,9 @@
 
 ## Descripción
 
-Este paquete documenta el conjunto de datos reproducible del proyecto
-**Sistema Inteligente de Control y Seguimiento de Terapia Física
-(SICST)**, incluyendo tanto el cuestionario general del proyecto como el
-experimento comparativo del Enfoque 1 (RF humano vs. LLM).
+Este documento describe el depósito de datos del proyecto **Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)** y conserva la referencia al repositorio reproducible vigente.
+
+El depósito Zenodo versión 1.0 fue publicado el 05/09/2026. El repositorio GitHub ha recibido correcciones y artefactos posteriores, por lo que ambos estados deben distinguirse.
 
 ## Autores
 
@@ -18,78 +17,115 @@ experimento comparativo del Enfoque 1 (RF humano vs. LLM).
 - URL DOI: `https://doi.org/10.5281/zenodo.22315298`
 - Zenodo: `https://zenodo.org/records/22315298`
 - Versión: `1.0`
+- Fecha de publicación: `2026-09-05`
 - Acceso: Público / Open
 
-## Registro previo del experimento (OSF)
+## Registro del protocolo experimental en OSF
 
 - DOI: `10.17605/OSF.IO/82Q76`
-- URL: `https://doi.org/10.17605/OSF.IO/82Q76`
-- Fecha de registro: 2026-09-12
+- URL DOI: `https://doi.org/10.17605/OSF.IO/82Q76`
+- Fecha y hora UTC registrada en la evidencia del proyecto: `2026-09-13T00:50:38Z`
+- Fecha y hora Ecuador continental: `2026-09-12 19:50:38`
 
-## Contenido del paquete
+El registro OSF se documenta en el proyecto como un registro retrospectivo del protocolo y no como una prerregistración confirmatoria anterior a la generación de los datos experimentales.
 
-### Cuestionario general del proyecto
-- `resumen_perfiles.csv` — distribución de 79 respuestas por perfil.
-- `catalogo_transcripciones_anonimizado.csv` — índice de transcripciones.
-- `Matriz_Trazabilidad_Final_PE5_Rubrica.csv` — matriz de trazabilidad
-  ERS (58 trazas: RF, RNF generales, RNF de IA).
+## Archivos verificados del registro Zenodo
 
-### Experimento comparativo (Enfoque 1: LLM vs. humano)
-- `prompt_generacion_RF_llm.md` — prompt exacto usado con GPT-5.5-mini,
-  modelo, fecha, y confirmación de no uso de información externa.
-- `matriz_trazabilidad_tema_RF.csv` — pareo temático entre RF humanos y
-  RF del LLM (66 ítems, 11 pares estrictos usados en el análisis
-  confirmatorio).
-- `analisis_experimento_llm_humano.py` — script reproducible que calcula
-  el acuerdo entre evaluadores (κ de Fleiss) y la comparación pareada
-  (prueba t / Wilcoxon con corrección de Holm-Bonferroni), y regenera
-  exactamente las Tablas 1-2 y la Figura 1 del manuscrito.
+La lista pública de Zenodo fue verificada el 21/09/2026 y muestra exactamente cuatro archivos de nivel superior:
 
-### Documentación
-- `ANONYMIZATION.md` — procedimiento de anonimización aplicado.
-- `ETHICS.md` — declaración ética y de gobernanza de datos.
-- `CITATION.cff` — metadatos de citación.
-- `LICENSE.txt` — licencia del contenido.
+1. `CITATION_FINAL.cff` — 1.3 kB.
+2. `LICENSE-DATA_FINAL.txt` — 2.2 kB.
+3. `README_PUBLICACION_FINAL.md` — 1.8 kB.
+4. `SICST_Dataset_Reproducible_v1.0_Zenodo_FINAL.zip` — 16.5 kB.
 
-## Fuente reproducible completa
+Tamaño total mostrado por Zenodo: aproximadamente `21.8 kB`.
 
-La versión vigente de todos los datos y scripts se encuentra en el
-repositorio del proyecto:
+## Aclaración sobre el contenido del depósito
+
+Versiones anteriores de la documentación del repositorio describían el depósito como si incluyera directamente artefactos actuales del experimento comparativo humano–LLM, entre ellos:
+
+- `prompt_generacion_RF_llm.md`;
+- `matriz_trazabilidad_tema_RF.csv`;
+- `analisis_experimento_llm_humano.py`.
+
+La lista pública del registro Zenodo no muestra esos archivos como elementos independientes. Por ello, esta documentación ya no afirma que formen parte del depósito como archivos separados.
+
+El depósito sí contiene `SICST_Dataset_Reproducible_v1.0_Zenodo_FINAL.zip`. No se atribuye al ZIP un contenido interno que no haya sido verificado directamente contra la versión depositada.
+
+## Fuente reproducible vigente
+
+La versión actual del proyecto se encuentra en:
 
 `https://github.com/gleiston-guerrero/SICST_ISR401`
 
-- Cuestionario general: `07_Datos/`
-- Experimento Enfoque 1: `06_Experimento/`
+### Cuestionario general
 
-## Reproducción
+Los datos y materiales reproducibles vigentes se encuentran principalmente en:
 
-Desde la raíz del repositorio:
+`07_Datos/`
+
+La cadena de reproducción declarada por el repositorio es:
 
 ```bash
-# Cuestionario general
 python 07_Datos/scripts/orquestar.py
+```
 
-# Experimento comparativo LLM vs. humano
+### Experimento comparativo humano–LLM
+
+Los artefactos vigentes del experimento se encuentran principalmente en:
+
+`06_Experimento/`
+
+Entre ellos se documentan en el repositorio:
+
+- `prompts_llm/prompt_generacion_RF_llm.md`
+- `datos_crudos/`
+- `datos_procesados/`
+- `datos_procesados/matriz_trazabilidad_tema_RF.csv`
+- `scripts_analisis/analisis_experimento_llm_humano.py`
+- `resultados/`
+- `registro_previo/`
+- `osf_deviations.pdf`
+
+La reproducción declarada del análisis experimental es:
+
+```bash
 python 06_Experimento/scripts_analisis/analisis_experimento_llm_humano.py
 ```
 
+Estas rutas describen el **repositorio vigente** y no deben interpretarse automáticamente como la lista de archivos del depósito histórico Zenodo v1.0.
+
 ## Integridad
 
-Los hashes SHA-256 del cuestionario general se encuentran en
-`07_Datos/checksums_datos.sha256`.
+Los hashes SHA-256 del cuestionario general se mantienen en:
+
+`07_Datos/checksums_datos.sha256`
+
+La existencia de esos hashes en el repositorio actual no implica que todos los archivos actuales estuvieran incluidos en el depósito del 05/09/2026.
 
 ## Privacidad
 
-No se incluyen nombres completos, cédulas, teléfonos, firmas ni
-consentimientos firmados. Los códigos de participante se mantienen
-únicamente para trazabilidad académica. La clave que revela el origen
-real (humano/LLM) de cada ítem del experimento se mantiene cifrada fuera
-de este paquete público (ver `ANONYMIZATION.md`).
+El paquete público no debe incluir identificadores directos, consentimientos firmados, firmas, rostros, audios ni videos identificables de participantes.
+
+Los códigos de participante se mantienen para trazabilidad académica. La evidencia sensible se conserva separada de la capa pública del proyecto.
 
 ## Citación
 
-Consultar `CITATION.cff`.
+Para el depósito Zenodo, consultar:
 
-## Repositorio fuente
+- DOI: `https://doi.org/10.5281/zenodo.22315298`
+- archivo depositado `CITATION_FINAL.cff`
+
+Para el código y materiales vigentes del proyecto, consultar el repositorio:
 
 `https://github.com/gleiston-guerrero/SICST_ISR401`
+
+## Trazabilidad temporal
+
+Debe distinguirse entre:
+
+- **Zenodo v1.0:** publicación del 05/09/2026;
+- **OSF:** registro del protocolo el 12/09/2026 19:50:38 (Ecuador continental), equivalente a 13/09/2026 00:50:38 UTC;
+- **repositorio vigente:** incluye correcciones y artefactos posteriores a ambas fechas.
+
+Esta distinción evita atribuir retrospectivamente al depósito Zenodo archivos que solo están demostrados en versiones posteriores del repositorio.
