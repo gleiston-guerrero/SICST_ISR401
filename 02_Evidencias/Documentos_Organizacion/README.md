@@ -1,94 +1,77 @@
 # Documentos de Organización - SICST
 
-Esta carpeta contiene cinco documentos utilizados como material de referencia documental para comprender información y procesos relacionados con terapia física dentro del proyecto **Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)**.
+Esta carpeta contiene cinco documentos utilizados como material de referencia para comprender información y procesos relacionados con terapia física dentro del proyecto **Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)**.
 
-## Estado de procedencia
+## Procedencia corregida
 
-Durante la revisión del plan de mejora se verificó el historial Git de estos archivos.
+Durante la revisión del Plan de Mejora se corrigió la procedencia documental de estos archivos.
 
-El historial permite comprobar **cuándo y por quién fueron incorporados al repositorio**, pero la evidencia actualmente disponible no permite demostrar con certeza la institución, establecimiento, profesional o fuente externa original de la que provino cada documento antes de su incorporación.
+De acuerdo con la revisión indicada en el Plan de Mejora del 19/09/2026:
 
-Por esta razón, estos archivos se conservan como **documentos de referencia de procedencia externa no verificada** y no deben presentarse como formatos oficiales de una clínica, hospital, centro de fisioterapia, profesional o institución concreta mientras no exista evidencia que lo demuestre.
+- los cuatro archivos cuyo nombre comienza por `Formato_` fueron elaborados por el equipo como documentos de trabajo y fueron generados/estructurados mediante `python-docx`;
+- `HCL - HOJA.docx` corresponde al documento de referencia procedente de la organización.
 
-Tampoco se atribuye retrospectivamente autoría documental al integrante que realizó la carga al repositorio. El historial Git demuestra la incorporación al repositorio, no necesariamente la creación original del documento.
+Esta clasificación se utiliza para evitar presentar documentos elaborados por el equipo como si fueran formatos originales emitidos por una organización externa.
 
-## Documentos incluidos y trazabilidad disponible
+## Documentos incluidos
 
-| Archivo | Tipo de documento | Evidencia de incorporación al repositorio | Procedencia original |
+| Archivo | Tipo | Procedencia declarada | Observación de trazabilidad |
 |---|---|---|---|
-| `Formato_Evaluacion_Fisica.docx` | Formato de evaluación física | Cargado por Angelo Zambrano el 01/09/2026, commit `b967730d` | No verificada con la evidencia disponible |
-| `Formato_Plan_Terapeutico_Domiciliario.docx` | Plan terapéutico domiciliario | Cargado por Angelo Zambrano el 02/08/2026, commit `5b662085` | No verificada con la evidencia disponible |
-| `Formato_Registro_Asistencia.docx` | Registro de asistencia | Cargado por Angelo Zambrano el 01/09/2026, commit `e71200a0` | No verificada con la evidencia disponible |
-| `Formato_Registro_Evolucion_Terapeutica.docx` | Registro de evolución terapéutica | Cargado por Angelo Zambrano el 02/08/2026, commit `5b662085` | No verificada con la evidencia disponible |
-| `HCL - HOJA.docx` | Hoja / formato HCL | Cargado por Angelo Zambrano el 02/08/2026, commit `5b662085` | No verificada con la evidencia disponible |
+| `Formato_Evaluacion_Fisica.docx` | Formato de evaluación física | **Elaborado por el equipo** | Documento de trabajo generado/estructurado mediante `python-docx`; incorporado al repositorio por Angelo Zambrano el 01/09/2026, commit `b967730d`. |
+| `Formato_Plan_Terapeutico_Domiciliario.docx` | Plan terapéutico domiciliario | **Elaborado por el equipo** | Documento de trabajo generado/estructurado mediante `python-docx`; incorporado al repositorio el 02/08/2026, commit `5b662085`. |
+| `Formato_Registro_Asistencia.docx` | Registro de asistencia | **Elaborado por el equipo** | Documento de trabajo generado/estructurado mediante `python-docx`; incorporado al repositorio por Angelo Zambrano el 01/09/2026, commit `e71200a0`. |
+| `Formato_Registro_Evolucion_Terapeutica.docx` | Registro de evolución terapéutica | **Elaborado por el equipo** | Documento de trabajo generado/estructurado mediante `python-docx`; incorporado al repositorio el 02/08/2026, commit `5b662085`. |
+| `HCL - HOJA.docx` | Hoja / formato HCL | **Documento procedente de la organización** | Se conserva como material de referencia externo. No se atribuye una institución, profesional o autor concreto adicional si esa identificación no está respaldada por evidencia disponible. |
 
-## Uso permitido dentro del proyecto
+## Alcance de la procedencia
 
-Estos documentos pueden utilizarse únicamente como evidencia de que el equipo consultó o conservó materiales de referencia relacionados con:
+La expresión **“elaborado por el equipo”** significa que el documento fue preparado como artefacto de trabajo del proyecto y no debe presentarse como un formato oficial entregado por una clínica, hospital o institución externa.
+
+La expresión **“documento procedente de la organización”** aplicada a `HCL - HOJA.docx` permite distinguirlo de los cuatro documentos elaborados por el equipo. Esta clasificación no autoriza a atribuirle una institución, profesional o autor específico que no pueda verificarse.
+
+## Uso dentro del proyecto
+
+Los cuatro `Formato_*.docx` pueden utilizarse como artefactos elaborados por el equipo para organizar o representar información relacionada con:
 
 - evaluación física;
 - planificación terapéutica;
 - registro de asistencia;
-- seguimiento de evolución;
-- estructura de información clínica o terapéutica.
+- seguimiento de evolución terapéutica.
 
-Su presencia en el repositorio **no demuestra** por sí sola:
+`HCL - HOJA.docx` se conserva como documento externo de referencia para comprender la estructura de información clínica o terapéutica.
 
-- que hayan sido utilizados por un establecimiento específico;
-- que hayan sido entregados oficialmente por una institución;
-- que constituyan normativa institucional;
-- que representen el procedimiento real de una clínica determinada;
-- que hayan sido creados por los integrantes del proyecto;
-- que una organización externa haya autorizado su publicación.
+Ninguno de estos documentos debe utilizarse para afirmar, sin evidencia adicional, que:
 
-Cuando una afirmación del ERS, la matriz de trazabilidad o el manuscrito dependa del origen institucional de estos documentos, dicha afirmación debe retirarse o reformularse si no existe evidencia adicional que respalde ese origen.
+- una institución específica aprobó el proyecto;
+- una clínica concreta utiliza exactamente los cuatro formatos elaborados por el equipo;
+- los documentos elaborados por el equipo constituyen normativa institucional;
+- una organización externa autorizó automáticamente la publicación de información personal.
 
-## Total de tipos documentales
+## Relación con el uso de IA y automatización documental
 
-Se conservan **5 tipos diferentes de documentos**:
+La generación o estructuración mediante `python-docx` de los cuatro documentos `Formato_*.docx` está declarada también en:
 
-1. Evaluación física.
-2. Plan terapéutico domiciliario.
-3. Registro de asistencia.
-4. Registro de evolución terapéutica.
-5. Hoja HCL.
+`10_Autoria/declaracion_uso_ia.md`
 
-## Relación con el proyecto
-
-Los documentos fueron considerados como material auxiliar para comprender posibles datos y actividades relacionadas con el contexto de terapia física.
-
-La información derivada de esta revisión documental debe distinguirse de la evidencia obtenida directamente mediante:
-
-- entrevistas;
-- cuestionarios;
-- walkthroughs;
-- observaciones;
-- otras evidencias empíricas verificables del proyecto.
-
-No debe atribuirse a estos documentos mayor nivel de procedencia o autoridad del que pueda demostrarse.
+El uso de `python-docx` y apoyo de IA para estructurar un documento no lo convierte en evidencia primaria ni en documento institucional externo.
 
 ## Privacidad
 
-Los documentos almacenados públicamente en esta carpeta deben encontrarse:
+Los documentos publicados en esta carpeta deben estar en blanco, anonimizados o sin información personal identificable.
 
-- en blanco;
-- anonimizados; o
-- sin información personal identificable.
+No deben publicarse nombres, números de identificación, teléfonos, direcciones, firmas ni otros datos personales de pacientes reales.
 
-No deben publicarse nombres completos, números de cédula, teléfonos, direcciones, firmas, diagnósticos asociados a una persona identificable ni otros datos personales de pacientes reales.
-
-Cuando exista una versión original con información identificable, debe conservarse únicamente en una ubicación restringida y no publicarse en el repositorio abierto.
+Si existe una versión con datos identificables, debe conservarse únicamente en una ubicación restringida y no en el repositorio público.
 
 ## Regla de trazabilidad
 
-Si posteriormente se recupera evidencia verificable sobre la procedencia original de alguno de estos archivos, deberá documentarse mediante un nuevo commit, indicando:
+No se reescribe el historial Git.
 
-- fuente real;
-- fecha conocida;
-- responsable o institución, únicamente si está respaldado;
-- evidencia que permita verificar la atribución.
+La corrección de procedencia se realiza mediante nuevos commits y se registra en:
 
-No se deben completar esos datos por inferencia ni retroactivamente sin respaldo.
+`07_Datos/registro_correcciones.md`
+
+Cualquier atribución futura adicional deberá estar respaldada por evidencia verificable.
 
 ## Estructura
 
