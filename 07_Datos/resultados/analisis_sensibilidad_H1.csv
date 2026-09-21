@@ -1,0 +1,16 @@
+﻿metrica,con_79_respuestas,sin_rafaga_31_08,diferencia,nota
+N total,79,66,-13,Se excluyen únicamente EV2-PAC-54 a EV2-PAC-66 del 31/08/2026.
+N pacientes/ex pacientes,62,49,-13,Las 13 respuestas de la ráfaga corresponden a este perfil.
+N familiares/cuidadores,14,14,0,Sin cambio.
+N fisioterapeutas,3,3,0,Sin cambio.
+Media dificultad para recordar/rep. (Q6),4.1184,3.9524,-0.166,Escala 1-5.
+Media importancia indicaciones claras (Q7),4.3421,4.2381,-0.104,Escala 1-5.
+Media importancia recordatorios (Q8),4.1316,4.0159,-0.1157,Escala 1-5.
+Media importancia registrar dolor (Q10),4.3421,4.2698,-0.0723,Escala 1-5.
+Media importancia registrar fatiga (Q11),4.3947,4.3175,-0.0773,Escala 1-5.
+Q12 'Si' ver avance - conteo,64,51,-13,Todas las 13 respuestas de la ráfaga marcaron 'Si'.
+Q12 'Si' ver avance - %,84.2105,80.9524,-3.2581,Porcentaje sobre pacientes/familiares.
+Q13 cámara 'Si' - conteo,21,9,-12,12 de las 13 respuestas de la ráfaga marcaron 'Si'.
+Q13 cámara 'Si' - %,27.6316,14.2857,-13.3459,Cambio visible en la categoría 'Si' sin calificativo.
+"Q13 cámara 'Si, pero solo con autorizacion previa' - conteo",43,42,-1,Una respuesta de la ráfaga usó esta categoría.
+"Q13 cámara positiva combinada ('Si' + 'Si, pero...') - %",84.2105,80.9524,-3.2581,La aceptación combinada cambia menos que la distribución interna de categorías.
