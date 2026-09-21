@@ -1,54 +1,82 @@
-
 # Ética y documentación institucional - SICST
 
 ## Estado de la documentación ética
 
-La documentación ética correspondiente al proyecto **Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)** se encuentra actualmente en proceso de revisión y aprobación institucional.
+El proyecto **Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)** no dispone, con la evidencia actualmente conservada en el repositorio, de un aval institucional firmado y fechado que permita afirmar que existió aprobación ética institucional previa a las actividades de recolección y validación.
 
-A la fecha de preparación de este repositorio, los documentos disponibles corresponden a **plantillas y documentos preparados para el proceso de aprobación**, por lo que no se presentan como resoluciones, avales ni aprobaciones institucionales definitivas.
+Los documentos disponibles en `08_Etica/` corresponden a plantillas, documentos de trabajo y documentación de transparencia. No se presentan como resoluciones, avales ni aprobaciones institucionales definitivas.
+
+## Declaración de desviación ética
+
+La situación anterior se documenta explícitamente en:
+
+[`declaracion_desviacion_etica.md`](declaracion_desviacion_etica.md)
+
+La declaración fue creada de forma retrospectiva durante el plan de mejora para dejar constancia de que:
+
+- no existe evidencia disponible de una aprobación institucional previa firmada;
+- la declaración no constituye una aprobación retroactiva;
+- las plantillas éticas no deben interpretarse como resoluciones emitidas;
+- cualquier documento institucional que se incorpore posteriormente debe conservar su fecha real de emisión;
+- los consentimientos individuales y la revisión de datos personales se verifican en tareas separadas del plan de mejora.
 
 ## Documentación disponible
 
-Las versiones actualmente disponibles se encuentran en:
+Las plantillas preparadas para el proceso ético e institucional se encuentran en:
 
 `Plantillas_Pendientes_Aprobacion/`
 
-Estas plantillas corresponden a los documentos preparados para cumplir con los requisitos éticos e institucionales del proyecto.
+Su presencia en el repositorio demuestra únicamente que fueron preparadas como documentación de trabajo. No demuestra que hayan sido aprobadas, firmadas o emitidas oficialmente.
 
 ## Documentación pendiente
 
-Al momento de esta entrega se encuentran pendientes de emisión o aprobación definitiva, según corresponda:
+Con la evidencia actualmente disponible permanecen sin aprobación institucional demostrada, según corresponda:
 
 - documentos éticos institucionales A01–A13;
 - aval institucional definitivo;
 - aprobaciones o resoluciones oficiales;
-- Adenda de Segunda Ronda, cuando corresponda al proceso institucional.
+- Adenda de Segunda Ronda, cuando corresponda.
 
-Los documentos anteriores **no han sido fabricados, retrofechados ni presentados como aprobados** mientras se espera la resolución institucional correspondiente.
+No se atribuyen firmas, fechas de aprobación ni autorizaciones institucionales que no estén respaldadas por documentos emitidos realmente.
 
 ## Tratamiento de los datos
 
-Mientras se completa el proceso institucional, el repositorio mantiene separación entre evidencias públicas anonimizadas y material restringido.
+El repositorio mantiene separación entre evidencia pública anonimizada y material restringido.
 
-La información potencialmente identificable se mantiene separada del contenido público y el acceso a los originales se limita a la zona restringida del proyecto.
+La evidencia pública debe evitar la exposición de:
 
-La evidencia pública utiliza códigos de participante y procura evitar la exposición de:
-
-- nombres completos;
+- nombres completos de participantes;
 - números de identificación;
 - teléfonos;
 - correos electrónicos;
 - firmas;
-- grabaciones de voz identificables;
-- rostros identificables;
-- otros datos personales.
+- direcciones;
+- grabaciones de voz o rostros identificables cuando no exista justificación y autorización verificable;
+- otros datos personales que permitan identificar directamente a una persona.
+
+Los materiales originales que requieran cotejo con el docente deben conservarse por los canales restringidos establecidos para el proyecto.
+
+## Consentimientos individuales
+
+La existencia de una declaración de desviación ética no sustituye la revisión de los consentimientos individuales.
+
+El cotejo de los originales y la decisión de retirar datos que no puedan respaldarse corresponden a la tarea G2 del Plan de Mejora.
 
 ## Actualización futura
 
-Una vez recibidas las aprobaciones o documentos oficiales correspondientes, esta carpeta será actualizada incorporando las versiones definitivas emitidas por la institución, conservando su fecha real de emisión y sin modificar retrospectivamente el historial del proyecto.
+Si posteriormente se recibe un aval, resolución u otro documento oficial, deberá incorporarse conservando:
+
+- la fecha real de emisión;
+- su versión original;
+- su procedencia verificable;
+- su relación temporal real con las actividades del proyecto.
+
+Un documento posterior no debe utilizarse para afirmar retrospectivamente que existió aprobación previa.
 
 ## Nota de transparencia
 
-La ausencia de un documento aprobado en esta carpeta significa que dicho documento **aún no ha sido emitido o aprobado oficialmente**.
+**Estado documentado al 20/09/2026:** no se demuestra una aprobación ética institucional previa mediante un documento firmado disponible en el repositorio.
 
-Las plantillas incluidas se conservan únicamente como evidencia documental del proceso de preparación y gestión ética del proyecto.
+La declaración detallada se conserva en:
+
+`08_Etica/declaracion_desviacion_etica.md`
