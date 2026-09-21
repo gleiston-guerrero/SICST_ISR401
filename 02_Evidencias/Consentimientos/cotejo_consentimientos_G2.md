@@ -22,7 +22,7 @@ El equipo revisó físicamente los originales y confirmó que los 18 participant
 | `EV2-PAC-08` | Paciente/expaciente | 2026-07-26 | `EV2-PAC-08_Consentimiento_Firmado.jpeg` | **VÁLIDO** | **PENDIENTE** |
 | `EV2-PAC-09` | Paciente/expaciente | 2026-07-26 | `EV2-PAC-09_Consentimiento_Firmado.jpeg` | **VÁLIDO** | **PENDIENTE** |
 | `EFT-01` | Estudiante de fisioterapia | 2026-09-06 | `EFT-01_Consentimiento_Firmado.jpeg` | **VÁLIDO** | **PENDIENTE** |
-| `EFT-02` | Estudiante de fisioterapia | 2026-09-06 | `EFT-02_Consentimiento_Firmado.jpeg` | **VÁLIDO** | **PENDIENTE** |
+| `EFT-02` | Estudiante de fisioterapia | 2026-09-07 | `EFT-02_Consentimiento_Firmado.jpeg` | **VÁLIDO** | **PENDIENTE** |
 | `EFT-03` | Estudiante de fisioterapia | 2026-09-06 | `EFT-03_Consentimiento_Firmado.jpeg` | **VÁLIDO** | **PENDIENTE** |
 | `FAM-01` | Familiar/cuidador | 2026-09-07 | `FAM-01_Consentimiento_Firmado.jpeg` | **VÁLIDO** | **PENDIENTE** |
 | `FAM-02` | Familiar/cuidador | 2026-09-07 | `FAM-02_Consentimiento_Firmado.jpeg` | **VÁLIDO** | **PENDIENTE** |

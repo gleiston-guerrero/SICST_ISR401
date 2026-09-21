@@ -23,3 +23,9 @@ Las fechas de sesión se mantienen alineadas con `02_Evidencias/elegibilidad.csv
 ## Resultado
 
 No se mantiene ninguna sesión de EFT/FAM/FIS con la fecha ficticia 17/06/2026. No se crea evidencia retrospectiva para aparentar notas contemporáneas y se conserva la trazabilidad de los nombres históricos.
+
+## Corrección posterior de EFT-02
+
+Durante la revisión final del 21/09/2026, el equipo detectó que la fecha `06/09/2026` asignada previamente a `EFT-02` fue un error de digitación. La fecha correcta es `07/09/2026`, coherente con la hoja original de correspondencia conservada como `10_Autoria/correspondencia/2026-09-07_Entrevista_Estudiante_Fisioterapia_EFT-02_Peticion_Entrevista.jpeg`.
+
+Se corrigieron las tablas documentales relacionadas sin modificar el contenido de la evidencia original.

@@ -13,7 +13,7 @@ El prefijo `2026-06-17` de esos nombres de archivo se conserva únicamente como 
 | Código | Fecha de sesión vigente | Fecha real de redacción declarada | Tratamiento F3 |
 |---|---:|---:|---|
 | EFT-01 | 06/09/2026 | 05/09/2026 | Archivo histórico/preparatorio; no válido como nota contemporánea de la sesión |
-| EFT-02 | 06/09/2026 | 06/09/2026 | Fecha declarada coincidente con la sesión; incorporado a GitHub el 13/09 |
+| EFT-02 | 07/09/2026 | 07/09/2026 | Fecha declarada coincidente con la sesión; incorporado a GitHub el 13/09 |
 | EFT-03 | 06/09/2026 | 06/09/2026 | Fecha declarada coincidente con la sesión; incorporado a GitHub el 13/09 |
 | FAM-01 | 07/09/2026 | 07/09/2026 | Fecha declarada coincidente con la sesión; incorporado a GitHub el 13/09 |
 | FAM-02 | 07/09/2026 | 07/09/2026 | Fecha declarada coincidente con la sesión; incorporado a GitHub el 13/09 |
