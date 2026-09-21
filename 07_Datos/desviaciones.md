@@ -1,54 +1,64 @@
-# Desviaciones y transformaciones del paquete de datos SICST
+# Desviaciones y observaciones del cuestionario
 
-## Fuente
+## H1 — Exportación original y ráfagas de respuestas
 
-La fuente principal utilizada por la cadena reproducible es:
+### Exportación original
 
-`07_Datos/datos_crudos/respuestas_cuestionario_2B.csv`
+Se conserva una copia sin modificar de la exportación descargada directamente de Google Forms:
 
-El archivo corresponde a las respuestas reales recopiladas para el proyecto SICST.
+`02_Evidencias/Respuestas/exportacion_original_google_forms.xlsx`
 
-## Transformaciones previstas
+Características verificadas de la exportación:
 
-El pipeline (`07_Datos/scripts/`, 7 pasos + orquestador) realiza únicamente
-transformaciones reproducibles sobre el archivo de origen.
+- hoja principal: `Form Responses 1`;
+- rango con datos: `A1:Z80`;
+- 79 respuestas y 26 columnas;
+- la primera columna se denomina `Timestamp`;
+- periodo observado: 23/07/2026 21:38:20 a 01/09/2026 09:14:56;
+- SHA-256: `e624de7e2d00398eb84e152b441a3cf444bdd58e21c70c175ba12bc53bd41050`.
 
-### Eliminación de fecha y hora
+El hash se conserva en:
 
-La primera columna del archivo crudo contiene la fecha y hora de envío de cada respuesta.
+`02_Evidencias/Respuestas/exportacion_original_google_forms.sha256`
 
-Esta columna se excluye de la versión procesada para reducir información temporal innecesaria y disminuir el riesgo de identificación indirecta.
+La versión procesada existente en el repositorio sustituyó el encabezado `Timestamp` por `0`; por ese motivo, la exportación original se conserva separada y no se sobrescribe.
 
-### Limpieza
+### Ráfagas observadas
 
-El paso 2 (`02_limpiar_datos.py`) elimina espacios al inicio y final de los campos y descarta únicamente filas completamente vacías.
+Las marcas temporales de la exportación original confirman varios intervalos cortos entre respuestas consecutivas. En total se identifican **31 intervalos menores de 60 segundos**, coincidiendo con la observación del plan de mejora.
 
-### Conservación de respuestas
+#### 02/08/2026
 
-No se modifican, completan ni fabrican respuestas de participantes.
+Se registraron **26 respuestas** en dos bloques principales:
 
-No se generan participantes inexistentes.
+- 00:57:34 a 02:05:04: 16 respuestas;
+- 08:37:15 a 08:45:04: 10 respuestas.
 
-## Cambio respecto a la versión anterior del pipeline
+#### 31/08/2026
 
-La versión anterior del pipeline consistía en un único script que generaba
-solamente el resumen de participantes por perfil. Se amplió a 7 pasos
-numerados para producir un análisis más completo (estadísticos por
-dimensión Likert, tablas de frecuencia por pregunta, y tablas cruzadas),
-sin modificar ni reinterpretar ningún dato de origen: todos los resultados
-adicionales se derivan de las mismas 79 respuestas reales ya existentes.
+Se registraron **13 respuestas consecutivas**, con códigos `EV2-PAC-54` a `EV2-PAC-66`, entre aproximadamente **20:29:33 y 20:37:13**, es decir, en unos **7 minutos y 41 segundos**.
 
-## Resultados derivados
+La exportación de Google Forms confirma las marcas temporales, pero por sí sola **no documenta la causa** de la velocidad de respuesta. No se atribuye retrospectivamente una explicación que no esté respaldada por evidencia contemporánea. Si existieron formularios en papel, digitación asistida, aplicación presencial conjunta u otra causa documentada, esa evidencia debe conservarse y citarse aparte.
 
-El pipeline genera 13 archivos en `resultados/`: un resumen de
-participantes por perfil, estadísticos descriptivos de las preguntas en
-escala Likert por perfil, 9 tablas de frecuencia por pregunta categórica o
-de opción múltiple, y 2 tablas cruzadas perfil × variable clave.
+### Análisis de sensibilidad
 
-Todos los resultados se obtienen exclusivamente desde los datos almacenados en `datos_crudos`.
+Para evaluar cuánto influye la ráfaga del 31/08, se recalcularon indicadores excluyendo únicamente las 13 respuestas `EV2-PAC-54` a `EV2-PAC-66`.
 
-## Limitaciones
+Archivo reproducible de resultados:
 
-Los códigos de participantes se mantienen para permitir trazabilidad interna del estudio. Antes de cualquier depósito público externo se realizará una revisión adicional de privacidad y consentimiento.
+`07_Datos/resultados/analisis_sensibilidad_H1.csv`
 
-Los consentimientos firmados y demás documentos con datos personales no forman parte del paquete público de datos.
+Resultados principales:
+
+- N total: 79 → 66.
+- Pacientes/expacientes: 62 → 49.
+- Las medias Likert principales cambian entre **0,07 y 0,17 puntos** en escala 1–5.
+- La proporción de respuestas `Si` a “ver el avance” cambia de **84,21 %** a **80,95 %**.
+- En aceptación de cámara, la categoría `Si` sin calificativo cambia de **27,63 %** a **14,29 %**.
+- La aceptación positiva combinada (`Si` + `Si, pero solo con autorizacion previa`) cambia de **84,21 %** a **80,95 %**.
+
+Por tanto, la exclusión de la ráfaga produce cambios pequeños en las medias generales, pero sí modifica de forma visible la distribución interna de las categorías de aceptación de cámara. Los resultados del cuestionario deben interpretarse teniendo presente esta sensibilidad.
+
+## H2
+
+Pendiente documentar aquí la tabla antes/después de recodificación de códigos, conforme al plan de mejora.
