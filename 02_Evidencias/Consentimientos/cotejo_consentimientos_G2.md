@@ -29,15 +29,15 @@ El equipo revisó físicamente los originales y confirmó que los 18 participant
 | `FAM-03` | Familiar/cuidador | 2026-09-07 | `FAM-03_Consentimiento_Firmado.jpeg` | **VÁLIDO** | **PENDIENTE** |
 | `FAM-04` | Paciente/expaciente (código histórico FAM) | 2026-09-17 | `FAM-04_Consentimiento_Firmado.jpeg` | **VÁLIDO** | **PENDIENTE** |
 | `FIS-01` | Profesional de fisioterapia | 2026-09-07 | `FIS-01_Consentimiento_Firmado.jpeg` | **VÁLIDO** | **PENDIENTE** |
-| `WALK-NTEC-01` | Walkthrough no técnico | 2026-07-19 | `WALK-NTEC-01Consentimiento_Firmado.jpeg` | **VÁLIDO** | **PENDIENTE** |
-| `WALK-TEC-01` | Walkthrough técnico | 2026-07-18 | `WALK-TEC-01_Consentimiento_Firmado.jpg` | **VÁLIDO** | **PENDIENTE** |
+| `WALK-NTEC-01` | Paciente/expaciente — usuario no técnico en walkthrough | 2026-07-19 | `WALK-NTEC-01_Consentimiento_Firmado.jpeg` | **VÁLIDO** | **PENDIENTE** |
+| `WALK-TEC-01` | Fisioterapeuta — usuario técnico en walkthrough | 2026-07-19 | `WALK-TEC-01_Consentimiento_Firmado.jpg` | **VÁLIDO** | **PENDIENTE** |
 
 ## Casos revisados expresamente
 
 - `EFT-01` y `EFT-02`: el equipo confirmó que existen originales físicos propios y válidos para cada participante, aunque las copias públicas actuales requieren revisión documental por la duplicación histórica señalada en el plan de mejora.
 - `EV2-PAC-01` y `FAM-01`: el equipo confirmó que los originales físicos corresponden a participantes distintos y válidos.
 - `EV2-PAC-03` y `FAM-02`: el equipo confirmó que los originales físicos corresponden a participantes distintos y válidos.
-- `WALK-TEC-01`: el equipo confirmó un consentimiento original válido. El archivo histórico `WALK-TEC-02` no se utiliza como sustituto ni se incorpora como participante vigente.
+- `WALK-TEC-01`: el equipo recuperó y revisó la copia del consentimiento correspondiente al participante. El consentimiento está fechado el 19/07/2026. El acta conserva el código histórico `WALK-FIS-01`, mientras que el código vigente es `WALK-TEC-01`; el participante corresponde al rol de fisioterapeuta. La sesión real registrada en video se realizó el 23/07/2026 a las 20:23. La diferencia entre la fecha del consentimiento y la fecha de la sesión se conserva expresamente y no se modifica retroactivamente.
 - `FAM-04`: el consentimiento fue revisado como correspondiente al participante real con perfil paciente/expaciente; `FAM-04` se conserva únicamente como código histórico.
 
 ## Estado frente a G2
