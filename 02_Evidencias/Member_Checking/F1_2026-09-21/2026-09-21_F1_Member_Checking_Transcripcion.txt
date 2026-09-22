@@ -1,0 +1,124 @@
+
+Buenas noches, mi nombre es Pedro Marcos de la Chávez y antes de todo vamos a presentar primero lo que es el acta de consentimiento que este documento se va a proporcionar y será necesario para que usted decida si está participado o no en la investigación relacionada con el desarrollo de un sistema de control de terapia física realizado bajo la dirección del docente ingeniero Blaketon Cicerón Ulloa de la materia de ingeniería de requerimiento. La participación considerada será para desarrollar un sistema de investigación y responder algunas preguntas relacionadas con la experiencia de uso y funcionamiento y utilidad del sistema. Por ello, la participación permanecerá en un lugar asignado usando los dispositivos correspondientes para interactuar con la aplicación. 
+
+Bueno, me darían permiso para lo que es la grabación de pantalla y para quien me dé el permiso, ¿me autorizan? Sí, lo autorizamos. Bueno, comencemos con lo siguiente. Bueno, el objetivo de esta sesión es presentar a participantes que ya fueron parte del levantamiento de los principales hallazgos obtenidos del análisis para comprobar si nuestras interpretaciones representan adecuadamente sus experiencias y necesidades. 
+
+Bueno, en la evidencia publicada utilizaremos únicamente los códigos asignados que hubiera asignado previamente, que es EV2 raya-paciente-raya05 y EV2-paciente-06 y EV2-pan-02. Antes de comenzar, cada participante ha sido informado del propósito de esta sesión y ha firmado el consentimiento correspondiente para participar y autorizar la grabación. Antes que todo, comenzamos con el siguiente.
+
+EV2-paciente-05, ¿confirma que participa voluntariamente en esta sesión y que autoriza la grabación? Sí, confirmo que participo voluntariamente y autorizo la grabación. EV2-pac-06, ¿confirma que participa voluntariamente en esta sesión y que autoriza la grabación? Sí, autorizo la grabación y confirmo que participo voluntariamente. EV2-pan-02, ¿confirma que participa voluntariamente en esta sesión y que autoriza la grabación? Sí, confirmo que participo voluntariamente y autorizo la grabación. 
+
+Bueno, nos encontramos a que algunas personas pueden olvidar sus ejercicios o perder constancia, por lo que es un recordatorio y alarma que podrían ayudar. Estoy de acuerdo. A veces uno puede olvidarse de horario y un recordatorio ayudarle a mantener la rutina.
+
+Claro, yo también estoy de acuerdo. O sea, sobre todo uno tiene otras actividades que hacer durante el día y a veces se puede olvidar con el pasar del tiempo. Yo también estoy de acuerdo. 
+
+Como familiar también sería útil saber cuándo corresponde realizar los ejercicios para poder apoyar. Con el siguiente, EV2-pac-03, ¿apoyo audiovisual? ¿Videos o imágenes ayudarían a entender mejor cómo ejecutar los ejercicios? Sí, a veces leyendo solamente no nos podría ayudar, entonces con un apoyo audiovisual nos podría venir mucho mejor al realizar ciertos ejercicios. Es verdad, incluso también sería bueno indicar cuánto tiempo uno puede descansar entre cada ejercicio. 
+
+También estoy de acuerdo, porque mientras más claras sean las instrucciones, más fácil es ayudar a las personas. EV4, supervisión y corrección de ejercicio. ¿Sería importante poder saber si la postura o el movimiento se está realizando correctamente? Sí, porque uno puede pensar que está haciendo bien el ejercicio, pero en realidad lo está realizando de una forma inadecuada.
+
+Estoy de acuerdo. Sería útil también recibir algunas indicaciones cuando la postura no es la correcta, más que todo. Yo también estoy de acuerdo con eso, especialmente para evitar que un ejercicio mal hecho pueda causar más dolor.
+
+EV5, registros de dolor y fatiga. ¿Les parece útil registrar dolor, cansancio o dificultad durante los ejercicios? Sí, creo que ayudaría a saber qué ejercicios me generan más molestias. Además también serviría para comparar si con el tiempo disminuye el dolor que uno presenta. 
+
+También porque esa información podría ayudar al fisioterapeuta a saber cómo está relacionada la persona. TUP06, seguimiento de progreso. ¿Considera útil poder ver la evolución del tratamiento? Lo considero demasiado útil porque así al ver el progreso que estamos realizando nos llega a motivar bastante para seguir continuando con estos ejercicios.
+
+Yo también estoy de acuerdo porque me gustaría comparar cómo estaba antes y cómo estoy después de realizar varias sesiones. Yo como familiar también permitiría conocer si realmente está mejorando. TUP07, comunicación con el fisioterapeuta.
+
+¿Sería útil poder enviar consultas o observaciones al fisioterapeuta entre sesiones? Sí, porque puede aparecer una duda cuando uno está haciendo los ejercicios en casa. Claro, y además no siempre uno puede esperar hasta la siguiente cita, sino que se puede preguntar ya algo adicional en ese momento. Para mí principalmente si ocurre alguna molestia o algo que necesite orientación. 
+
+TUP08, privacidad de cámaras y datos. ¿Considera importante controlar cuándo se usa la cámara y cómo se almacenan los datos? Sí, yo quisiera saber cuándo está activa la cámara y para qué se utilizan las imágenes. Estoy totalmente de acuerdo, pero en mi caso yo preferiría que la cámara no se active automáticamente sin mi autorización. 
+
+Yo también, pero también debería explicarse quién puede ver esa información. TUP09, acceso familiar autorizado. ¿El paciente debería poder decidir qué familiar puede consultar su información? Sí, porque creo que el paciente debería decidir quién puede ver sus datos.
+
+Claro que sí, no todos los familiares deberían tener acceso automático para poder ver mis datos. Yo también estoy muy de acuerdo con eso. Como familiar pienso que el acceso debería existir solamente si la persona lo autoriza. 
+
+TUP10, seguridad y señales de alarma. ¿El paciente debería consultar su información? Sí, sería importante saber cuándo una molestia ya no es normal y hay que pararla. Claro que sí que estoy de acuerdo.
+
+Especialmente para evitar que uno continúe y termine empeorando con los ejercicios. Una recomendación que yo podría aportar aquí que también debería recomendar, contactar al profesional si ocurre algo serio. TUP11, accesibilidad y facilidad de uso. 
+
+¿Debe utilizar lenguaje fácil, botones claros y letras legibles? Sí, mientras más sencillo sea, más fácil será utilizarlo sin tener que pedir ayuda. Eso es verdad. Además, no debería tener demasiadas opciones complicadas.
+
+Yo estoy muy de acuerdo con eso porque hay personas mayores o personas que no tienen tanta capacidad y no saben utilizar mucho las tecnologías. TUP12, organización centralizada. ¿Sería útil tener rutinas, instrucciones y progresos en un celular? Exactamente, porque sería más cómodo que estar haciendo información en diferentes aplicaciones o mensajes. 
+
+Además, podríamos tener un mayor orden y así evitar confusiones más adelante. Mi opinión sería que también facilitaría revisar rápidamente lo que la persona tiene que realizar. TUP13, control profesional de las decisiones. 
+
+Si el sistema utiliza inteligencia artificial o recomendaciones automáticas, ¿el psicoterapeuta debería mantener la decisión final? Sí, porque el sistema puede ayudar, pero quien conoce el tratamiento es el profesional. Eso es verdad. Estoy muy de acuerdo. 
+
+Además, no confiaría en que una aplicación cambie sola por un tratamiento. Las recomendaciones pueden servir como apoyo porque, como ya sabemos, la tecnología está en desarrollo y a veces la IA exagera demasiado y puede decir que una simple malestar puede ser algo grave. Pero también esta de aquí tiene que darnos más recomendaciones, pero debería ser revisada por el psicoterapeuta, alguien profesional.
+
+TUP14, explicacidad e incertidumbre. ¿El sistema debería explicar por qué realiza una recomendación automática? Sí, si me recomienda hacer algo diferente quisiera saber por qué. Además, el sistema debería avisarnos si estoy totalmente seguro con dicha recomendación que me está dando.
+
+Yo también estoy de acuerdo porque una explicación genera más confianza que simplemente mostrar una decisión. TUP15, vigencia y versiones de rutina. ¿Debe quedar claro cuál es la rutina actual y cuáles eran las anteriores? Sí, porque podría confundirme y terminar haciendo una rutina que ya fue cambiada.
+
+Eso es verdad. Además, se debería aparecer claramente la fecha de la última actualización que hubo entre ejercicios. Sería muy útil poder revisar qué cambia entre una rutina y la otra. 
+
+TUP16, priorización y frecuencia de aviso. ¿Es importante diferenciar las aletas urgentes de los recordatores normales? Sí, debido a que si todas las notificaciones parecen urgentes, uno terminaría ignorándolas. En mi opinión, estoy parcialmente de acuerdo debido a que los avisos son útiles, pero no deberían llegar demasiados durante el día.
+
+Yo estoy totalmente de acuerdo. Una alerta relacionada con lo lore o seguridad debería verse diferente de un recordatorio común. TUP17, revocación y busquendo permisos. 
+
+¿El usuario debería poder quitar permisos sin saber quién ha accedido a su información? Sí, si autorizó a alguien, también debería poder quitarle el acceso después. En eso estoy totalmente de acuerdo. Sería bueno poder revisar quién ha visto mi información.
+
+Yo también estoy de acuerdo. Los permisos no deberían quedar activos para siempre, si el paciente ya no quiere compartir los datos. Preguntas finales. 
+
+Jesús, después de revisar los TUP17, ¿consideras que falta algo importante? En general, considero que están cubiertas las principales necesidades. Para mí, lo más importante sería que el sistema sea sencillo y que no reemplace al fisioterapeuta. Jerez, ¿consideras que falta algún aspecto? Por lo general, lo veo bastante completo. 
+
+Lo que sí me gustaría añadir son las notificaciones que puedan configurarse según la preferencia de cada persona. Digo que esto podría mejorar más la dinámica en lo que son las notificaciones y en lo que la persona quiere receptar al momento de tener el aplicativo. Brian, ¿consideras que falta algo? Yo considero que los puntos están muy completos. 
+
+Como familiar, destacaría que el paciente siempre pueda decidir qué información compartir con nosotros y qué información no compartir. ¿Hay algún hallazgo con el que estén en desacuerdo o que consideren que debería cambiarse? No, en general estoy de acuerdo con los hallazgos. En mi caso, no tengo ningún desacuerdo importante. 
+
+Solamente mantendría la observación de no saturar al usuario con demasiadas notificaciones. Yo tampoco tengo ningún desacuerdo. Considero que representa necesidades que pueden presentarse durante una terapia.
+
+Con esto, finalizamos la sesión de Melbourne Checking del progreso del sistema de terapia física durante esta sesión. Se revisaron los 17 subtemas derivados del análisis cualitativo con los participantes identificados mediante los códigos EV2-PAC05, EV2-PAC06 y PAN02. Las respuestas, acuerdos y desacuerdos y observaciones correspondientes expresadas durante esta sesión serán documentadas en el acta correspondiente y utilizadas para revisar las interpretaciones del análisis cuando sea necesario. 
+
+Le agradezco mucho por su participación, por su tiempo prestado y por su participación voluntaria. Gracias. Sub-09. 
+
+¿Acceso familiar autorizado? ¿El paciente debería poder decidir qué familiar pueden consultar su formación? Sí, porque creo que el paciente debería decidir quién puede ver sus datos. Claro que sí. No todos los familiares deberían tener acceso automático para poder ver mis datos.
+
+Yo también estoy muy de acuerdo con eso. Como familia, pienso que el acceso debería existir solamente si la persona lo autoriza. Sub-10. 
+
+Seguridad y señales de alarma. ¿El sistema debería indicar cuándo detener un ejercicio por dolor intenso, mareos u otros problemas? Sí. Sería importante saber cuándo una molestia ya no es normal y hay que pararla.
+
+Claro que sí que estoy de acuerdo. Especialmente para evitar que uno continúe y termine empeorando con los ejercicios. Una recomendación que yo podría aportar aquí que también debería recomendar, contactar al profesional si ocurre algo serio.
+
+Sub-11. Accesibilidad y facilidad de uso. ¿Debe utilizar lenguaje fácil, botones claros y letras legibles? Sí. 
+
+Mientras más sencillo sea, más fácil será utilizarlo sin tener que pedir ayuda. Eso es verdad. Además, no debería tener demasiadas opciones complicadas.
+
+Yo estoy muy de acuerdo con eso porque hay personas mayores o personas que no tienen tanta capacidad y no saben utilizar mucho las tecnologías. Sub-12. Organización centralizada. 
+
+¿Sería útil tener rutinas, instrucciones y progresos en un celular? Exactamente, porque sería más cómodo que estar haciendo información en diferentes aplicaciones o mensajes. Además, podríamos tener un mayor orden y así evitar confusiones más adelante. Mi opinión sería que también facilitaría revisar rápidamente lo que la persona tiene que realizar.
+
+Sub-13. Control profesional de las decisiones. Si el sistema utiliza inteligencia artificial o recomendación automática, ¿el físico-terapeuta debería mantener la decisión final? Sí, porque el sistema puede ayudar, pero quien conoce el tratamiento es el profesional.
+
+Eso es verdad. Estoy muy de acuerdo. Además, no confiaría en que una aplicación cambie sola por un tratamiento. 
+
+Las recomendaciones pueden servir como apoyo porque, como ya sabemos, la tecnología está en desarrollo y a veces la IA coge y las, como se dice, exagera demasiado y puede decir que una simple malestar puede ser algo grave, pero también esta de aquí tiene que estar nomás recomendaciones, pero debería ser revisada por el físico-terapeuta, alguien profesional. Sub-14. Explicacividad e incertidumbre. 
+
+¿El sistema debería explicar por qué realiza una recomendación automática? Sí, si me recomienda hacer algo diferente quisiera saber por qué. Además, ¿el sistema debería avisarnos si yo estoy totalmente seguro con dicha recomendación que me está dando? Yo también estoy de acuerdo porque una explicación genera más confianza que simplemente mostrar una decisión. Sub-15. 
+
+Vigencia y versiones de rutina. ¿Debe quedar claro cuál es la rutina actual y cuáles eran las anteriores? Sí, porque podría confundirme y terminar haciendo una rutina que ya fue cambiada. Eso es verdad. 
+
+Además, se debería aparecer claramente la fecha de la última actualización que hubo entre ejercicios. Sería muy útil poder revisar qué cambia entre una rutina y la otra. Sub-16. 
+
+Priorización y frecuencia de aviso. ¿Es importante diferenciar las aletas urgentes de los recordatores normales? Sí, debido a que si todas las notificaciones parecen urgentes, uno terminaría ignorándolas. En mi opinión, estoy parcialmente de acuerdo debido a que los avisos son útiles, pero no deberían llegar demasiados durante el día.
+
+Yo estoy totalmente de acuerdo. Una alerta relacionada con lo lore o seguridad debería verse diferente de un recordatorio común. Sub-17. 
+
+Revocación y busquendo permiso. ¿El usuario debería poder quitar permiso sin saber quién ha accedido a su información? Sí, si actualizó a alguien, también debería poder quitarle el acceso después. En eso estoy totalmente de acuerdo.
+
+Sería bueno poder revisar quién ha visto mi información. Yo también estoy de acuerdo. Los permisos no deberían quedar activos para siempre, si el paciente ya no quiere compartir los datos.
+
+Preguntas finales. Jesús, después de revisar los 17 hallazgos, ¿consideras que falta algo importante? En general, considero que están cubiertas las principales necesidades. Para mí, lo más importante sería que el sistema sea sencillo y que no reemplace al fisioterapeuta.
+
+Jerez, ¿consideras que falta algún aspecto? Por lo general, lo veo bastante completo. Lo que sí me gustaría añadir son las notificaciones que puedan configurarse según la preferencia de cada persona. Digo que esto podría mejorar más la dinámica en lo que son las notificaciones y en lo que la persona quiere receptar al momento de tener el aplicativo.
+
+Bryan, ¿consideras que falta algo? Yo considero que los puntos están muy completos. Como familiar, destacaría que el paciente siempre puede decidir qué información compartir con nosotros y qué información no compartir. ¿Hay algún hallazgo con el que estén en desacuerdo o que consideren que debería cambiarse? No, en general estoy de acuerdo con los hallazgos. 
+
+En mi caso, no tengo ningún desacuerdo importante. Solamente mantendría la observación de no saturar al usuario con demasiadas notificaciones. Yo tampoco tengo ningún desacuerdo. 
+
+Considero que representan necesidades que pueden presentarse durante una terapia. Con esto finalizamos la sesión de Melbourne Checking del progreso del sistema de terapia física. Durante esta sesión se revisaron los 17 subtemas derivados del análisis cualitativo con los participantes identificados mediante los códigos EV2-PAC05, EV2-PAC06 y PAN02. 
+
+Las respuestas, acuerdos y desacuerdos y observaciones correspondientes expresados durante esta sesión serán documentadas en el acta correspondiente y utilizadas para revisar las interpretaciones del análisis cuando sea necesario. Les agradezco mucho por su participación, por su tiempo prestado y por su participación voluntaria. Gracias. 
+
+Gracias.
+
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)
