@@ -132,6 +132,9 @@ La repetición de Member Checking requerida por F1 fue realizada el
 Se revisaron los **17 subtemas vigentes**, se conservaron las respuestas por
 hallazgo, se generó un acta final y se conservaron registros de audio y video.
 
-Queda pendiente completar la trazabilidad técnica de la grabación en las fichas
-e incorporar la sesión a los registros correspondientes antes del cierre
-definitivo de F1.
+La trazabilidad técnica de la grabación fue incorporada en
+`02_Evidencias/Fichas tecnicas/fichas_tecnicas.csv` y la sesión fue registrada
+en `10_Autoria/bitácora_sesiones/bitacora_elicitacion.csv`.
+
+Con estas evidencias, la repetición requerida por F1 queda documentada en la
+versión actual del repositorio.
