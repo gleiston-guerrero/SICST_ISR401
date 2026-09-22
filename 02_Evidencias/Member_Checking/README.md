@@ -2,81 +2,136 @@
 
 ## Descripción
 
-Esta carpeta contiene la evidencia pública correspondiente a la sesión de **Member Checking** realizada dentro del proyecto **Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)**.
+Esta carpeta contiene la evidencia correspondiente a las actividades de
+**Member Checking** realizadas dentro del proyecto **Sistema Inteligente de
+Control y Seguimiento de Terapia Física (SICST)**.
 
-El objetivo de esta actividad fue validar con participantes previamente involucrados en el levantamiento de información la interpretación de los principales hallazgos obtenidos durante el proceso de Ingeniería de Requerimientos.
+El objetivo de esta técnica es permitir que participantes previamente
+involucrados en el corpus revisen la interpretación de los hallazgos obtenidos
+durante el proceso de Ingeniería de Requisitos.
 
-## Sesión realizada
+---
 
-- **Fecha:** 29/08/2026
-- **Modalidad:** Presencial
-- **Lugar:** Quevedo, Los Ríos, Ecuador
+## 1. Sesión histórica del 29/08/2026
+
+Se conserva la evidencia histórica de la sesión realizada el **29/08/2026**.
+
+Esta sesión revisó seis hallazgos generales y permanece en el repositorio por
+razones de trazabilidad. No se utiliza como sustituto de la repetición realizada
+posteriormente para atender la observación F1 del plan de mejora.
+
+### Archivo histórico
+
+- `Acta_Member_Checking_SICST.pdf`
+
+La versión pública del acta fue censurada para evitar la exposición de datos
+personales identificables.
+
+---
+
+## 2. Repetición de Member Checking — F1
+
+Para atender la observación **F1** del plan de mejora, se realizó una nueva
+sesión de Member Checking.
+
+- **Fecha:** 21/09/2026
+- **Modalidad:** Remota mediante videollamada
 - **Número de participantes:** 3
+- **Participantes del corpus:**
+  - `EV2-PAC-05`
+  - `EV2-PAC-06`
+  - `FAM-02`
+- **Número de subtemas revisados:** 17
 - **Técnica:** Member Checking
+- **Registro de la sesión:** audio y video
 
-### Participantes codificados
+La sesión utilizó exclusivamente códigos de participante en la documentación
+pública.
 
-Para proteger la identidad de los participantes, en la documentación pública se utilizan únicamente los siguientes códigos:
+## Subtemas revisados
 
-- `EVM-PAC-1`
-- `EVM-PAC-2`
-- `EVM-PAC-13`
+Durante la sesión se revisaron los 17 subtemas vigentes del libro de códigos:
 
-Los tres participantes habían intervenido previamente en actividades de levantamiento de información relacionadas con el proyecto SICST.
+1. `SUB-01` — Adherencia y recordatorios.
+2. `SUB-02` — Instrucciones y dosificación.
+3. `SUB-03` — Apoyo audiovisual.
+4. `SUB-04` — Supervisión y corrección de ejecución.
+5. `SUB-05` — Registro de dolor y fatiga.
+6. `SUB-06` — Seguimiento del progreso.
+7. `SUB-07` — Comunicación con fisioterapeuta.
+8. `SUB-08` — Privacidad de cámara y datos.
+9. `SUB-09` — Acceso familiar autorizado.
+10. `SUB-10` — Seguridad y señales de alarma.
+11. `SUB-11` — Accesibilidad y facilidad de uso.
+12. `SUB-12` — Organización centralizada.
+13. `SUB-13` — Control profesional de las decisiones.
+14. `SUB-14` — Explicabilidad e incertidumbre.
+15. `SUB-15` — Vigencia y versiones de rutinas.
+16. `SUB-16` — Priorización y frecuencia de avisos.
+17. `SUB-17` — Revocación y gestión de permisos.
 
-## Hallazgos validados
+Las respuestas individuales y observaciones correspondientes a cada subtema se
+encuentran documentadas en el acta final y en la transcripción de la sesión.
 
-Durante la sesión se revisaron los siguientes aspectos:
+## Evidencias públicas de F1
 
-1. Seguimiento de ejercicios domiciliarios.
-2. Recordatorios de actividades terapéuticas.
-3. Registro de dolor y fatiga.
-4. Visualización del progreso terapéutico.
-5. Seguimiento de las actividades del paciente.
-6. Privacidad y protección de la información.
+Las evidencias públicas se encuentran en:
 
-Los tres participantes manifestaron estar **de acuerdo** con la interpretación de los hallazgos presentados.
+`F1_2026-09-21/`
 
-### Resultado
+Archivos:
 
-- Hallazgos validados: **6 de 6**
-- Hallazgos rechazados: **0**
-- Hallazgos parcialmente aceptados: **0**
-- Cambios solicitados: **Ninguno**
+- `2026-09-21_F1_Member_Checking_Acta_FINAL.pdf`
+- `2026-09-21_F1_Member_Checking_Acta_FINAL.docx`
+- `2026-09-21_F1_Member_Checking_Transcripcion.txt`
+- `2026-09-21_F1_Member_Checking_SICST_EV2-PAC-05_EV2-PAC-06_FAM-02.mp3`
+- `2026-09-21_F1_Member_Checking_Consentimiento_EV2-PAC-05.png`
+- `2026-09-21_F1_Member_Checking_Consentimiento_EV2-PAC-06.png`
+- `2026-09-21_F1_Member_Checking_Consentimiento_FAM-02.png`
 
-Por lo tanto, no fue necesario modificar los hallazgos sometidos a Member Checking.
+Los consentimientos publicados corresponden a versiones censuradas.
 
-## Archivos
+## Evidencia audiovisual restringida
 
-| Archivo | Descripción |
-|---|---|
-| `Acta_Member_Checking_SICST.pdf` | Acta pública de la sesión de Member Checking |
+El video original de la sesión contiene información identificable, incluidos
+rostros y nombres visibles durante la videollamada.
+
+Por protección de datos personales, dicho video **no se publica directamente
+en el repositorio público**.
+
+El archivo original se conserva para su incorporación y verificación mediante
+el mecanismo de evidencias restringidas del proyecto.
+
+Nombre del archivo original:
+
+`2026-09-21_F1_Member_Checking_SICST_EV2-PAC-05_EV2-PAC-06_FAM-02.mp4`
+
+No se modifica ni elimina el archivo original.
 
 ## Protección de datos
 
-La versión pública de las evidencias debe evitar la exposición de información personal identificable.
+La versión pública de las evidencias evita publicar nombres completos, firmas,
+números de identificación, rostros u otros datos personales identificables.
 
-Los nombres completos, firmas, números de identificación, rostros y cualquier otro dato que permita identificar directamente a los participantes deben mantenerse fuera de la versión pública del repositorio.
+Los participantes son identificados públicamente únicamente mediante sus
+códigos:
 
-Las evidencias originales que contienen información identificable, incluidas las fotografías de respaldo de la actividad, se conservan en la zona restringida y cifrada del proyecto:
+- `EV2-PAC-05`
+- `EV2-PAC-06`
+- `FAM-02`
 
-`../00_Restringido/`
+Las evidencias que contienen información identificable deben mantenerse fuera
+de la versión pública y gestionarse mediante el depósito restringido del
+proyecto.
 
-La documentación pública utiliza códigos de participante para mantener la trazabilidad sin revelar su identidad.
+## Estado de F1
 
-## Trazabilidad
+La repetición de Member Checking requerida por F1 fue realizada el
+**21/09/2026** con tres participantes pertenecientes al corpus.
 
-La evidencia de Member Checking complementa las actividades de levantamiento y validación de requisitos del proyecto SICST y permite comprobar que participantes previamente involucrados tuvieron la oportunidad de revisar la interpretación de los resultados obtenidos.
+Se revisaron los **17 subtemas vigentes**, se conservaron las respuestas por
+hallazgo, se generó un acta final y se conservaron registros de audio y video.
 
-Los códigos utilizados permiten relacionar esta actividad con las demás evidencias del proyecto sin publicar información personal.
-
-## Estado
-
-**Sesión de Member Checking completada.**
-
-- Participantes requeridos: >= 3
-- Participantes incluidos: 3
-- Validación de hallazgos: completada
-- Observaciones que requieren cambios: ninguna
-- Acta pública: disponible
-- Evidencia identificable: almacenada en zona restringida
+Queda pendiente completar la trazabilidad técnica de la grabación en las fichas
+e incorporar la sesión a los registros correspondientes antes del cierre
+definitivo de F1.
