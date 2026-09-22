@@ -46,3 +46,39 @@ El resultado final acumula **17 subtemas**.
 ## Nota de integridad
 
 Esta revisión valida respaldo textual dentro de las transcripciones disponibles. No sustituye la verificación auditiva pendiente de B1/B3 ni convierte una transcripción no cotejada palabra por palabra con su audio en evidencia auditiva verificada.
+
+## Verificación automatizada final
+
+El 21/09/2026 se incorporó y ejecutó el script
+`verificar_citas_codificacion.py` sobre la matriz y las transcripciones
+vigentes.
+
+La verificación automática obtuvo:
+
+- filas de matriz: **18**;
+- subtemas: **17**;
+- asignaciones positivas en la matriz: **203**;
+- citas registradas: **203**;
+- citas literales verificadas: **203**;
+- positivos sin cita: **0**;
+- citas sobrantes: **0**;
+- fallos totales: **0**.
+
+Cada fila positiva de `matriz_codificacion_SICST.csv` tiene una cita literal
+verificable en `citas_codificacion.csv`, junto con el archivo fuente y la
+línea o rango de líneas correspondiente.
+
+El script comprueba automáticamente:
+
+1. que los valores de la matriz sean `0` o `1`;
+2. que cada asignación positiva tenga exactamente una cita;
+3. que no existan citas correspondientes a valores `0`;
+4. que el archivo fuente exista;
+5. que la cita aparezca literalmente en la transcripción indicada;
+6. que la línea o rango de líneas registrado corresponda con la ubicación
+   real de la cita.
+
+Resultado final de la ejecución:
+
+`RESULTADO C1: OK — 0 FALLOS`
+
