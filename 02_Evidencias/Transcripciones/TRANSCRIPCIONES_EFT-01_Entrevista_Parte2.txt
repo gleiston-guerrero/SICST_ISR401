@@ -1,0 +1,56 @@
+CÓDIGO: EFT-01
+PERFIL: Estudiante de Fisioterapia
+TIPO: Entrevista — Parte 2
+DURACIÓN: 00:07:58
+FUENTE: EFT-01_Entrevista Parte 2.mp3
+NOTA: Transcripción estructurada a partir del texto temporizado proporcionado por el equipo. Debe conservarse el audio original como evidencia restringida.
+
+[00:03]
+Entrevistador: ¿Consideras útiles los recordatorios para que el paciente pueda cumplir sus rutinas?
+
+Participante: Sí, porque ayudan a convertir la terapia en una rutina diaria. No todos los pacientes necesitan el mismo número de avisos, así que deberían poder configurarse. Yo permitiría elegir días y horas. También marcar una sesión como pospuesta. El recordatorio podría incluir un mensaje breve como, hoy corresponde una rutina de movilidad, duración aproximada de unos 15 minutos. Si el paciente no realiza, podría aparecer nuevamente más tarde, pero sí convertirse en algo molesto. Lo ideal sería apoyar la adherencia, no presionar de forma excesiva.
+
+[00:53]
+Entrevistador: Listo, vamos con la siguiente que es, ¿qué información debería ver el fisioterapeuta para poder evaluar el progreso del paciente?
+
+[01:00]
+Participante: Vería primero un calendario de cumplimiento y después gráficos de dolor y fatiga. También mostraría los ejercicios que son más dificultosos, que han sido más difíciles. Y las observaciones recientes, si el paciente utiliza cámara u otra función de análisis. El fisioterapeuta podría ver únicamente los eventos marcados como relevantes, no revisar horas de video. Creo que es un buen resumen que debería permitir identificar rápidamente cambios, menos dolor, más cumplimiento, aparición de una dificultad nueva o varios días sin actividad. Después, si necesita detalle, podría entrar a cada sesión específica.
+
+[01:57]
+Entrevistador: Listo, vamos con la siguiente que es, ¿en qué situaciones debería generarse una alerta para el fisioterapeuta?
+
+[02:02]
+Participante: Una alerta importante sería un aumento brusco de dolor, una caída, mareo, pérdida inesperada de la movilidad o cualquier síntoma que el paciente marque como preocupante. También podría haber alertas de seguimiento, por ejemplo, tres sesiones consecutivas no realizadas por repeticiones de un mismo error. Yo separaría las alertas de urgentes de avisos informativos. Si todo aparece como urgente, el profesional puede terminar ignorando notificaciones. Cada alerta debería incluir el dato que la originó, la rutina relacionada y la fecha para que pueda interpretarse correctamente.
+
+[02:47]
+Entrevistador: Listo, seguimos con la siguiente que es, ¿qué opinas del uso de la cámara para poder revisar la postura y los movimientos del paciente?
+
+[02:54]
+Participante: Me parece una herramienta interesante, sobre todo si el objetivo es revisar la postura y patrones base. Sin embargo, el paciente debería decidir cuándo comienza el análisis y debería existir una indicación visible mientras la cámara está activa. No dejaría que la aplicación grabe sin necesidad. Si puede analizar el movimiento sin guardar el video completo, sería preferible. También tendría que explicar al paciente que se está evaluando, porque decidir solamente la inteligencia artificial analizando puede generar desconfianza si la persona no sabe qué información se obtiene.
+
+[03:44]
+Entrevistador: Listo, seguimos con la siguiente que es, ¿cómo consideras que debería utilizarse la inteligencia artificial dentro de un sistema de seguimiento de terapia física?
+
+[03:50]
+Participante: La inteligencia artificial debería ayudar a identificar tendencias y posibles errores. Por ejemplo, podría notar que el dolor aumenta después de un ejercicio específico o que la postura se repite de forma diferente a la indicada. Esos resultados deberían mostrar como sugerencias para la revisión. También podría ordenar alertas según lo importante o resumir las sesiones de la semana. Yo exigiría que explique de dónde sale la recomendación y que el fisioterapeuta pueda ver los datos originales. Una recomendación sin explicación sería difícil de utilizar de forma responsable.
+
+[04:44]
+Entrevistador: Listo, seguimos con la siguiente que es, ¿qué decisiones no debería tomar automáticamente el sistema sin revisión de un fisioterapeuta?
+
+[04:54]
+Participante: No permitiría que diagnostique, que cambie automáticamente la frecuencia de las sesiones o que agregue ejercicios de mayor dificultad o indique que un paciente pueda continuar a pesar de un alerta. Tampoco debería decidir por sí sola que una persona esté recuperada. Puede apoyar decisiones pero no reemplazar la evaluación profesional. Si exige incertidumbre, si existe incertidumbre, el sistema debería mostrarla. Creo que sería mejor un mensaje como, se detectó una posible dificultad que revise la sesión que afirma categoría, el fisioterapeuta tendría que tener la última palabra.
+
+[05:42]
+Entrevistador: Listo, seguimos con la siguiente que es, ¿qué información del paciente consideras que se debería mantener privada?
+
+[05:50]
+Participante: La información clínica, los datos personales, las observaciones profesionales y todo material audiovisual deberían estar protegidos. También considero privada la comunicación entre el paciente y el fisioterapeuta. Si existe acceso a familiares, debería limitarse según la autorización. Por ejemplo, un familiar quizás pueda ver la rutina que se completó, pero no necesariamente todas las notas clínicas. El usuario debería poder consultar con permisos sistemáticos y modificarlos. Si se usa la cámara, tendría que exigir una política especialmente para que sea clara sobre el almacenamiento, tiempo de conservación y quién pueda acceder a los archivos.
+
+[06:44]
+Entrevistador: Listo, ahora vamos con la última pregunta que es, ¿qué función consideras indispensable en una aplicación para el seguimiento de terapia física?
+
+[06:49]
+Participante: La función que más valor tendría, sería un historial de evolución sencillo y útil, tanto para el paciente como para el fisioterapeuta. Debería conectar el cumplimiento de síntomas y el progreso que uno en un mismo lugar. Para el paciente serviría como una motivación al ver sus avances y para el profesional como un apoyo al seguimiento. Complementaría eso con guías de ejercicios y comunicación. Creo que si el sistema logra que la información entre sesiones no se pierda, ya resolvería un problema importante del seguimiento tradicional, donde muchas cosas dependen de lo que la persona recuerde contar en la siguiente consulta.
+
+[07:44]
+Entrevistador: Listo, con todo esto ya acabamos la entrevista. Gracias por su tiempo y muchas gracias por la entrevista.
