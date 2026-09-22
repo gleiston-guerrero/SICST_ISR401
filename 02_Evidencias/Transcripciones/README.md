@@ -166,10 +166,24 @@ Para `EFT-01`, la duración total corresponde a la suma de las dos partes regist
 - Parte 2: `00:07:58,752`
 - Total: `00:17:09,000`
 
+### Correspondencia de piezas de EFT-01 para B3
+
+Para la verificación de la tarea B3, las dos piezas multimedia de EFT-01
+cuentan con una transcripción independiente:
+
+- `EFT-01_Entrevista.mp3`
+  → `TRANSCRIPCIONES_EFT-01_Entrevista_Parte1.txt`
+
+- `EFT-01_Entrevista Parte 2.mp3`
+  → `TRANSCRIPCIONES_EFT-01_Entrevista_Parte2.txt`
+
+El archivo `TRANSCRIPCIONES_EFT-01_Entrevista.txt` se conserva únicamente
+por trazabilidad histórica. Para la comprobación pieza-a-pieza exigida en B3
+se utilizan los archivos `Parte1` y `Parte2`.
+
 La inclusión de `WALK-NTEC-01` y `WALK-TEC-01` en esta tabla de duración no los convierte en entrevistas del corpus principal.
 
 ---
-
 # Relación con otros artefactos
 
 Las **16 entrevistas del corpus principal** se utilizan como fuente para:
