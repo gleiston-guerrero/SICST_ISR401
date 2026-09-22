@@ -1,0 +1,68 @@
+CÓDIGO: EFT-01
+PERFIL: Estudiante de Fisioterapia
+TIPO: Entrevista — Parte 1
+DURACIÓN: 00:09:10
+FUENTE: EFT-01_Entrevista.mp3
+NOTA: Transcripción estructurada a partir del texto temporizado proporcionado por el equipo. Se conserva el contenido tal como fue verificado en la fuente disponible. El audio original permanece como evidencia restringida.
+
+[00:05]
+Entrevistador: Buenas noches Ingeniero Gleston y buenas noches a todos. El día de hoy vamos a hacer lo que es la entrevista a un estudiante de fisioterapeuta en el cual primero que nada vamos a comenzar hablando sobre lo que es el consentimiento para lo que es la toma de imagen, video y cualquier opinión que se dé. Primero que nada comenzamos hablando de que lo que estamos haciendo ahora es un video nomás para poder adquirir requerimientos para el proyecto que estamos realizando que es un sistema de terapias físicas que va a estar guiado por inteligencia artificial y va a seguir los movimientos.
+
+[00:46]
+Entrevistador: Primero que nada ¿nos podría confirmar que nos da permiso para tener la grabación y audio de esta sesión?
+
+Participante: Sí, estoy de acuerdo.
+
+[00:56]
+Entrevistador: Listo, una vez con esto vamos a las siguientes preguntas que es en base a lo que tenemos el sistema y todo eso. Bueno comenzamos con la primera pregunta que es la siguiente.
+
+[01:09]
+Entrevistador: Desde tu formación en fisioterapeuta ¿cuáles crees que son las principales dificultades que tiene un paciente cuando continúa sus ejercicios en casa?
+
+[01:25]
+Participante: Pienso que la mayor dificultad es que en casa no existe una corrección inmediata. El paciente puede creer que está haciendo bien el ejercicio porque reconoce el movimiento pero quizás está compensando con otra parte del cuerpo o no respeta la posición indicada. También puede confundirse con las repeticiones y los descansos especialmente cuando tiene varias actividades por cumplir. Otro problema es la constancia. Durante los primeros días puede cumplir todo pero después puede comenzar a saltarse sesiones porque no siente cambios rápidos o porque tiene otras ocupaciones.
+
+[02:12]
+Entrevistador: Listo, con esa información seguimos con la siguiente pregunta que es ¿qué información consideras importante conocer antes de recomendar ejercicios a un paciente?
+
+[02:26]
+Participante: Consideraría primero el diagnóstico o motivo de la rehabilitación, la edad, el nivel del dolor, la movilidad actual y cualquier enfermedad de base. También preguntaría si ha realizado terapia antes, si tiene miedo de determinados movimientos y cuál es su objetivo principal. Desde mi punto de vista es importante saber qué puede hacer sin ayuda y qué necesita supervisión. Incluso conocer su entorno sería útil. Por ejemplo, si vive solo, si tiene un familiar que pueda apoyarlo o si cuenta con los materiales necesarios para realizar la rutina en casa.
+
+[03:05]
+Entrevistador: Listo, seguimos con la siguiente pregunta que es ¿qué información debería registrar el paciente después de realizar una rutina?
+
+[03:24]
+Participante: Debería registrar qué ejercicio realizó, si comenzó las series, cuánto tiempo le tomó y qué tan difícil le resultó la sesión. Añadiría dolor, fatiga y observación opcional. Me parece importante que la aplicación no obligue a escribir demasiado porque si registra la información, si la información es complicada, la persona puede dejar de hacerlo. Podría utilizarse botones o escalas rápidas y dejar el texto solamente para situaciones especiales. Con el tiempo esos registros permitirían comparar si la tolerancia al ejercicio mejora o si existe algún problema que se repita.
+
+[04:07]
+Entrevistador: Listo, seguimos con la siguiente que es ¿qué importancia tiene registrar el dolor?
+
+[04:15]
+Participante: El dolor es una de las señales más útiles para el seguimiento. Si se registra de forma constante, permite comparar días y ejercicios. Yo pediría un valor antes de comenzar y otro al terminar. Si la diferencia es muy grande, quedaría marcado para revisión. También es importante que el paciente pueda indicar dónde sintió la molestia y si fue algo diferente a lo habitual. El registro no debería interpretarse automáticamente como diagnóstico, pero sí como una señal objetiva que ayude a la fisioterapeuta a hacer mejores preguntas, como que revise la evolución.
+
+[05:02]
+Entrevistador: Listo, seguimos con la siguiente que es si también debería registrarse lo que es la fatiga o el nivel de esfuerzo. O sea, tenemos que registrar, digamos, ¿es obligatorio o si usted cree que también la fatiga debería, es algo fundamental?
+
+[05:20]
+Participante: Sí, hay ejercicios de fortalecimiento que pueden generar esfuerzos sin necesariamente producir dolor. Por eso la fatiga tendría su propio registro. Un paciente puede decir que no le dolió, pero que quedó demasiado agotado y tuvo dificultades para continuar con sus actividades. Esa información también importa. Podría medirse en una escala simple y compararse con una rutina realizada. Si en varias sesiones la fatiga es muy alta, el fisioterapeuta podría revisar la intensidad. También ayudaría a la diferente diferencia entre una sesión exigente, pero tolerable, y una que está siendo excesiva.
+
+[06:17]
+Entrevistador: Listo, seguimos con la siguiente que es ¿qué errores podría cometer un paciente al realizar un ejercicio sin supervisión? O sea, el paciente llega a la casa después de la terapia que tuvo, ¿qué es lo que el paciente podría cometer errores o sea, en realizarlo solo?
+
+[06:33]
+Participante: Puede realizar el movimiento demasiado rápido, no respetar el rango indicado, usar una postura que cambie el objetivo del ejercicio, o hacer compensaciones. También puede utilizar objetos de casa que no tienen el mismo peso o estabilidad que los usados en terapia. Otro error es decidir por cuenta propia que como se siente mejor puede duplicar las repeticiones. A veces la persona no reconoce que está perdiendo la técnica al final de la serie porque está cansada. Sin supervisión estos detalles son difíciles de detectar.
+
+[07:17]
+Entrevistador: Listo, vamos con la siguiente que es ¿crees que los vídeos explicativos serían útiles para realizar correctamente los ejercicios?
+
+[07:34]
+Participante: Sí, considero que deberían ser parte principal de la aplicación. Prefiriría vídeos cortos, unos ejercicios con una explicación sencilla, mostraría una vista frontal y lateral cuando sea necesario y resaltaría uno o dos errores comunes. También incluiría texto con series, repeticiones y descansos para que la persona no tenga que recordar todo. El vídeo debería poder pausarse y repetirse fácilmente. Incluso sería útil indicar que la sensación puede considerarse normal, qué señal debería hacer el paciente que se detenga la actividad y consulte al profesional.
+
+[08:22]
+Entrevistador: Listo, vamos con la siguiente que es ¿si consideras útiles los recordatorios para que el paciente pueda cumplir sus rutinas?
+
+[08:31]
+Participante: Sí, porque ayudan a convertir la terapia en una rutina diaria. No todos los pacientes necesitan el mismo número de avisos, así que deberían poder configurarse. Yo permitiría elegir los días y horas. También marcar una sesión como pospuesta. El recordatorio podría incluir un mensaje breve como hoy corresponde la rutina de movilidad. Permitir elegir los recordatorios. Podría incluir mensajes. ¡Ah! ¡Ah! ¡No!
+
+NOTA DE CONTINUIDAD:
+El archivo EFT-01_Entrevista.mp3 termina durante la respuesta sobre recordatorios. La pieza EFT-01_Entrevista Parte 2.mp3 retoma esa pregunta desde el inicio y continúa la entrevista. Esta superposición se conserva documentalmente; no se elimina contenido de ninguna pieza.
